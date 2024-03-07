@@ -54,6 +54,14 @@ decentralized linkedin:
 * `PROMOTED`: This working item has been promoted.
 * `CANCELLED`: This working item has been cancelled.
 
+```mermaid
+graph TD
+  Proposed[PROPOSED] --> ChairEvaluation[Chair Evaluation] --> |if accepted| ACCEPTED[ACCEPTED] --> PROMOTED
+  ChairEvaluation -->|if not accepted submit another proposal| DECLINED
+  ACCEPTED --> CANCELLED
+  ACCEPTED --> PAUSED
+```
+
 ### Active States
 
 * `ACTIVE`: This working item is active.
