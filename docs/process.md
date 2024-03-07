@@ -50,9 +50,10 @@ decentralized linkedin:
 
 * `PROPOSED`: This item has been proposed. 
 * `ACCEPTED`: This item has been accepted by the chairs of the WG into action.
-* `PAUSED`: This working item has been paused.
+* `PAUSED`: This working item has been accepted but not currently being worked on.
 * `PROMOTED`: This working item has been promoted.
 * `CANCELLED`: This working item has been cancelled.
+* `COMPLETED`: This working item has been completed and is done.
 
 ```mermaid
 graph TD
@@ -60,6 +61,7 @@ graph TD
   ChairEvaluation -->|if not accepted submit another proposal| DECLINED
   ACCEPTED --> CANCELLED
   ACCEPTED --> PAUSED
+  ACCEPTED --> COMPLETED
 ```
 
 ### Active States
