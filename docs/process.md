@@ -48,23 +48,32 @@ decentralized linkedin:
 
 ### Meta States
 
-* `PROPOSED`: This item has been proposed. 
+* `PROPOSED`: This item has been proposed to the chairs of the WG, and is waiting for review. 
 * `ACCEPTED`: This item has been accepted by the chairs of the WG into action.
 * `PAUSED`: This working item has been accepted but not currently being worked on.
-* `PROMOTED`: This working item has been promoted.
-* `CANCELLED`: This working item has been cancelled.
-* `COMPLETED`: This working item has been completed and is done.
+* `PROMOTED`: This working item has been promoted and has moved on to either a WG or another SDO.
+* `CANCELLED`: This working item has been cancelled. A cancelled item may not be re-activated. 
+* `ACTIVE`: This working item has been accepted and is currently being worked on.
+* `COMPLETED`: This working item has been completed and is done and has not been promoted.
 
 ```mermaid
-graph TD
-  Proposed[PROPOSED] --> ChairEvaluation[Chair Evaluation] --> |if accepted| ACCEPTED[ACCEPTED] --> PROMOTED
-  ChairEvaluation -->|if not accepted submit another proposal| DECLINED
-  ACCEPTED --> CANCELLED
-  ACCEPTED --> PAUSED
-  ACCEPTED --> COMPLETED
+graph LR
+  Proposed[PROPOSED] --> INREVIEW[In Review] --> |if accepted| ACCEPTED[ACCEPTED] 
+  INREVIEW -->|if not accepted submit another proposal| DECLINED
+ 
+  subgraph ActiveStates[Active States]
+     ACTIVE{{ACTIVE}}
+  end
+  ACCEPTED --> ACTIVE
+  subgraph InActiveStates[InActiveStates]
+    CANCELLED{{CANCELLED}}
+    COMPLETED{{COMPLETED}}
+    PAUSED
+    PROMOTED{{PROMOTED}}
+  end
+  ACTIVE --> CANCELLED{{CANCELLED}}
+  ACTIVE --> COMPLETED{{COMPLETED}}
+  ACTIVE --> PAUSED
+  ACTIVE --> PROMOTED{{PROMOTED}}
+  PAUSED --> ACTIVE
 ```
-
-### Active States
-
-* `ACTIVE`: This working item is active.
-* `INACTIVE`: This working item is not currently active. 
