@@ -91,7 +91,6 @@ State transitions past propsal requires _all_ WG chairs, and likely SC approval 
 - consistent with WG charter
 - viable: participant interest
 - need established; doesn’t conflict with existing efforts
-- 
   
 #### Proposal Promoted Criteria
 
