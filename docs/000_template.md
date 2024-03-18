@@ -1,13 +1,17 @@
-**Text** 
+# <Proposed Work Item Name>
 
-- Authors: []()
+## Metadata
+- Proposal Author(s): [](), [](), ...
+[//]: # (If different from above)
+- Chair(s): [](), [](), ...
 - Status: [Proposed]()
 - Since: <date> 
-- Status 
-- Supersedes: <>
-- Start Date: <date>
 - Tags: <tags>
-- Version: <version>
+- Supersedes: <>
+- Version: <>
+
+[//]: # (Do not fill out below. To be filled out by chairs post-approval)
+- Start Date: <date>
 - URI: <uri>
 
 ## Summary 
