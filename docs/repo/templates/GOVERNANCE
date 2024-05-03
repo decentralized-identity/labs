@@ -141,3 +141,14 @@ new access controls for community.
 * Setting security policies on the branches and repository.
 * Setting any keys to the repsository.
 * Integrating any new services, such as CICD to the repository.
+
+## Project Leads
+
+Project Leads are the ones that are leading the project. 
+
+### Activies 
+
+- Setting up the inital proposal
+- Reporting back to WG chairs.
+- Ensuring compliance with DIF policies and following the operating procedures defined in the [process.md](../../process.md) file
+- Determining administrators and roles of the project.
