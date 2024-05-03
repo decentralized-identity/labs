@@ -1,10 +1,10 @@
-# Applications and Implementations Working Group Charter
+# Incubation Labs Charter
 
 ## Status
 
 |        |                                                                              |
 |--------|------------------------------------------------------------------------------|
-| Name   | Applications and Implementations Working Group                               |
+| Name   | Incubation Labs                               |
 | Chairs | TBD                                                                          |
 | Status | STRAWMAN                                                                     |
 | Repo   | https://github.com/decentralized-identity/applications-and-implmentations-wg |
@@ -16,7 +16,7 @@ environment for decentralized identity-based user applications and spec
 implementations. The WG provides an IP-safe environment for general
 implementation-related discussion, and allows participants to propose and
 participate in WG Work Items, each of which is focused on a user application
-and/or spec implementation
+and/or spec implementation.
 
 ##  Deliverables
 
