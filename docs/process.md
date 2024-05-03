@@ -132,7 +132,7 @@ As a lead of a working item, you take on the the following responsibilities:
    - A requirement for the working item to go on pause.
    - Other large changes to the working grop.
  
-### Structure
+### Working Group Structure
 
 ```mermaid
 graph TB
