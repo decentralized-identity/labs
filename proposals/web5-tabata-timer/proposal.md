@@ -1,4 +1,4 @@
-# <Proposed Work Item Name>
+# Decentralized Tabata Timer 
 
 ## Metadata
 - Proposal Author(s): [Andor Kesselman](https://www.linkedin.com/in/andorsk/), [](), ...
