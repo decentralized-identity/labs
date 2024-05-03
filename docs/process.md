@@ -131,3 +131,14 @@ As a lead of a working item, you take on the the following responsibilities:
    - A chair leaving for some reason
    - A requirement for the working item to go on pause.
    - Other large changes to the working grop.
+ 
+### Structure
+
+```mermaid
+graph TB
+      SC[DIF Steering Committee] --> LabsWG
+      LabsWG[Lab Working Group] --> WGChairs
+      WGChairs[WG Chairs] --> ProjectLeads
+      ProjectLeads[Project Leads]
+      ProjectLeads --> Contributors
+```
