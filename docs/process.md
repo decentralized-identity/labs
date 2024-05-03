@@ -120,3 +120,14 @@ Cancellation can happen for some of the following reasons:
 * If a breach of the WG charter has been found, a Working Item MAY be cancelled.
 * If a proposal is obsolete and there's no _reasonable_ way this can move forward.
 
+### Work Item Lead Responsibilites
+
+As a lead of a working item, you take on the the following responsibilities:
+
+* Ensure all contributions are made in compliance with the code of conduct, contributing guides.
+* Ensure operating procedures are compliant with the charter.   
+* Provide regular updates to the chairs about the progress of the efforts. The chairs may ask for you to attend a meeting built at a cadence. 
+* Notify the chairs on decisions/states that may impact the group progress such as:
+   - A chair leaving for some reason
+   - A requirement for the working item to go on pause.
+   - Other large changes to the working grop.
