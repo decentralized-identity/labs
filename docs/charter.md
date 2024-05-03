@@ -1,10 +1,10 @@
-# Applications and Implementations Working Group Charter
+# Incubation Labs Charter
 
 ## Status
 
 |        |                                                                              |
 |--------|------------------------------------------------------------------------------|
-| Name   | Applications and Implementations Working Group                               |
+| Name   | Incubation Labs                               |
 | Chairs | TBD                                                                          |
 | Status | STRAWMAN                                                                     |
 | Repo   | https://github.com/decentralized-identity/applications-and-implmentations-wg |
