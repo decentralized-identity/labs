@@ -23,15 +23,15 @@ cd applications-and-implmentations-wg
 mkdir proposals/decentralized-linkedin
 
 # copy the file over
-cp docs/000_template.md proposals/decentralized-linkedin/000_proposal.md
+cp docs/000_template.md proposals/decentralized-linkedin/<03d>_proposal.md
 
 # edit it
-EDITOR docs/000_template.md proposals/decentralized-linkedin/000_proposal.md # edit the file
+EDITOR docs/000_template.md proposals/decentralized-linkedin/<03d>_proposal.md # edit the file
 
 # make a branch with it
 git checkout -b proposal/decentralized-linkedin
 git add . 
-git commit -m "added decentralied linkedin proposal"
+git commit -m "added decentralized linkedin proposal"
 ```
 
 Now send a PR and request the `CODEOWNERS` to review the PR. If approved, they
