@@ -1,1 +1,3 @@
-# Applications and Implementations Working Group
+# Incubation Labs
+
+See our charter [charter](./docs/charter.md). 
