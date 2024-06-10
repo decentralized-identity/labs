@@ -149,3 +149,32 @@ graph TB
         ProjectLeads --> Contributors
       end
 ```
+
+#### Roles
+
+##### Chairs :
+
+* Designations: 3
+* Responsibilities:
+   * Evaluating Work Item proposals.
+   * Moving Working Items Across State
+   * Empowering leads within a work item. 
+   * Ensuring fair and correct process.
+   * Training leads / ensuring IPR protections across work items.
+   * Ensuring compliance with DIF standards. 
+
+##### Mentors :
+
+ * Designations: Unlimited, but suggested around 10-20.
+ * Responsibilities:
+   *  Provide guidance and support to project leads to help improve and enhance the project.
+
+##### Project Leads
+
+ * Designation: 1-2 per project
+ * Create the working item
+ * Communicate with Chairs on state changes.
+ * Mangage calendar.
+ * Create charter
+ * Foster contributions and community involvement.
+   
