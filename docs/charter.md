@@ -11,7 +11,7 @@
 
 ## Scope
 
-The Implementations and Applications Working Group (WG) serves as an incubation
+The Incubation Labs Working Group (ILWG) serves as an incubation
 environment for decentralized identity-based user applications and spec
 implementations. The WG provides an IP-safe environment for general
 implementation-related discussion, and allows participants to propose and
