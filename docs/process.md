@@ -137,8 +137,15 @@ As a lead of a working item, you take on the the following responsibilities:
 ```mermaid
 graph TB
       SC[DIF Steering Committee] --> LabsWG
-      LabsWG[Lab Working Group] --> WGChairs
-      WGChairs[WG Chairs] --> ProjectLeads
-      ProjectLeads[Project Leads]
-      ProjectLeads --> Contributors
+      subgraph LabsWG
+        direction TB
+        WGChairs[WG Chairs] --> Mentors
+        subgraph Work Item
+          ProjectLeads
+          Contributors
+        end
+        Mentors --> ProjectLeads
+        ProjectLeads[Project Leads]
+        ProjectLeads --> Contributors
+      end
 ```
