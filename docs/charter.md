@@ -43,7 +43,7 @@ of the possible deliverables:
 
 ## Intended Audience
 
-- Working Items in this working group are intended to be focused on people building products and are interested in real applications of decentralized technology. This working group is meant to focus on startups building decentralized applications and larger organizations looking to collaborate on a particular effort in a safe, IP friendly way. 
+- This working group is meant to for startups as well as large organisations looking to build decentralized applications, collaborate on early-stage protocols/specifications, and innovate new ideas.
 
 ## Caveats
 
