@@ -1,0 +1,5 @@
+Here's the provided JSON data formatted into a markdown table:
+
+| Name          | LinkedIn                                | Email             | Company          | Start Date  | Description                                                                                                            | Domain Expertise                                                                  |
+|---------------|-----------------------------------------|-------------------|------------------|-------------|------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| Andor Kesselman | [andorsk](https://www.linkedin.com/in/andorsk/) | andor@andor.us    | Henosisknot LLC  | 2024-06-10  | Co-chair of the TSC, Chair of DWN Working Item, Co-Chair of the Trust Registry Task Force at Trust Over IP              | graph theory, startups, computer vision, decentralized web nodes, trust registries, full_stack |
