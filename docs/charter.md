@@ -4,14 +4,14 @@
 
 |        |                                                                              |
 |--------|------------------------------------------------------------------------------|
-| Name   | Incubation Labs                               |
-| Chairs | TBD                                                                          |
-| Status | STRAWMAN                                                                     |
-| Repo   | https://github.com/decentralized-identity/applications-and-implmentations-wg |
+| Name   | Incubation Labs                                                              |
+| Initial Chairs | Andor Kesselman, Ankur Banerjee                                      |
+| Status | PROPOSED                                                                     |
+| Repo   | [https://github.com/decentralized-identity/incubation-labs](https://github.com/decentralized-identity/incubation-labs) |
 
 ## Scope
 
-The Implementations and Applications Working Group (WG) serves as an incubation
+The Incubation Labs Working Group (ILWG) serves as an incubation
 environment for decentralized identity-based user applications and spec
 implementations. The WG provides an IP-safe environment for general
 implementation-related discussion, and allows participants to propose and
@@ -26,7 +26,8 @@ of the possible deliverables:
 * Documentation : Document and discuss use cases 
 * Specifications : Develop specifications for various uses 
 * Code : Develop open source software as references toward use cases
-
+* Interoperability Profiles: Selection of specifications, schemas, and other requirements to establish interoperability
+  
 ## Operating Procedure
 
 * Chairs are bound to the [process](./process.md) defined in this repo.
@@ -37,12 +38,12 @@ of the possible deliverables:
 
 ## Member participation
 
-- All members that contribute any code as a submission to each Working Groups **MUST** be a member of DIF.
-- The **MUST** sign off with **DCO** on each PR to contribute.
+- All substantive contributions to this Working Groups **MUST** be made by a member of DIF.
+- In is encouraged for each lead to require sign off with **DCO** on each PR to contribute.
 
 ## Intended Audience
 
-- Working Items in this working group are intended to be focused on people building products and are interested in real applications of decentralized technology.
+- This working group is meant to for startups as well as large organisations looking to build decentralized applications, collaborate on early-stage protocols/specifications, and innovate new ideas.
 
 ## Caveats
 

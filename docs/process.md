@@ -80,9 +80,9 @@ graph LR
 
 ### State Transition Governance Framework
 
-Acceptance from a proposal requires _all_ chairs to approve the working item within a 7 day timeframe from the notification. If a chair has not put a position between then, or requested additional time, it is assumed via in-absentia that it is a vote for approval. 
+Acceptance from a proposal requires a _majority_ of the chairs to approve the working item within a 7 day timeframe from the notification. If a chair has not put a position between then, or requested additional time, it is assumed via in-absentia that it is a vote for approval. 
 
-State transitions past propsal requires _all_ WG chairs, and likely SC approval in the case that the promotion is a new WG _except_ for PAUSED, which require at least a majority approval by the chairs of the WG.
+State transitions past propsal requires a _majority_ of WG chairs, and likely SC approval in the case that the promotion is a new WG _except_ for PAUSED, which require at least a majority approval by the chairs of the WG.
 
 ### Evaluation Criteria 
 
@@ -92,6 +92,7 @@ State transitions past propsal requires _all_ WG chairs, and likely SC approval 
 - viable: participant interest
 - need established; doesn’t conflict with existing efforts
 - related to decentralized identity
+- Chairs may involve expert pool in case where idea assistance is required.
   
 #### Proposal Promoted Criteria
 
@@ -137,8 +138,51 @@ As a lead of a working item, you take on the the following responsibilities:
 ```mermaid
 graph TB
       SC[DIF Steering Committee] --> LabsWG
-      LabsWG[Lab Working Group] --> WGChairs
-      WGChairs[WG Chairs] --> ProjectLeads
-      ProjectLeads[Project Leads]
-      ProjectLeads --> Contributors
+      subgraph LabsWG
+        direction TB
+        WGChairs[WG Chairs] --> Mentors
+        subgraph Work Item
+          ProjectLeads
+          Contributors
+        end
+        Mentors --> ProjectLeads
+        ProjectLeads[Project Leads]
+        ProjectLeads --> Contributors
+      end
 ```
+
+#### Roles
+
+##### Chairs :
+
+* Designations: 3
+* Responsibilities:
+   * Evaluating Work Item proposals.
+   * Moving Working Items Across State
+   * Empowering leads within a work item. 
+   * Ensuring fair and correct process.
+   * Training leads / ensuring IPR protections across work items.
+   * Ensuring compliance with DIF standards.
+* Process to modify: Chairs may be transferred via existing chairs/SC per the DIF guidelines. 
+
+##### Mentors :
+
+ * Designations: Unlimited, but suggested around 10-20.
+ * Responsibilities:
+   *  Provide guidance and support to project leads to help improve and enhance the project.
+ * Process to modify
+   *  Chairs to edit the mentors.json with the name, email, start_date, description, socials, and tags of the mentor.
+
+##### Project Leads
+
+ * Designation: 1-2 per project
+ * Create the working item
+ * Communicate with Chairs on state changes.
+ * Mangage calendar.
+ * Create charter
+ * Foster contributions and community involvement.
+ * Process to modify: Chairs may modify the project leads.  
+
+
+
+   
