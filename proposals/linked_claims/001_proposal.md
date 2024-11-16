@@ -10,7 +10,7 @@
 - Supersedes: 
 - Version: 0.0.1
 - URI: https://linkedtrust.us/
-  
+---
 [//]: # (Do not fill out below. To be filled out by chairs post-approval)
 - Start Date: 
 - URI: 
