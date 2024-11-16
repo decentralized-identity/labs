@@ -1,8 +1,8 @@
 # Linked Claims
 
 ## Metadata
-- Proposal Author(s): [Golda Veldez]( )
-- Lead(s): [Golda Valdez]()
+- Proposal Author(s): [Golda Velez](https://github.com/gvelez17)
+- Lead(s): [Golda Velez]()
 - Status: [Proposed]()
 - Since: November 19, 2024
 - Expected End Date: February 6, 2025
