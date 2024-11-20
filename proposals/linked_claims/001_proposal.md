@@ -28,22 +28,18 @@ LinkedClaims with https://github.com/Cooperation-org/LinkedClaims/blob/main/Link
 
 ## Motivation
 
-The Verifiable Credential (VC) ecosystem has encountered several use cases that require a third-party assertion,
-or a linked claim to an existing object (another VC, a PDF, a web page, etc). 
-Whether it is product reviews, linked claims of self-created credentials, provenance of academic paper reviews, 
-or some other general purpose third-party assertion, these use cases have several requirements in common. 
-Each use case may also require a domain-specific set of fields.
+Trust shapes every interaction in our digital lives, from verifying academic credentials to tracking humanitarian aid. Yet we lack a universal 
+way to connect and verify claims across different systems. The Verifiable Credential ecosystem has encountered numerous use cases requiring third-party
+assertions and endorsements, but current solutions remain fragmented and inflexible.
 
-We propose a minimal format for connecting (and optionally cryptographically binding) 
-credentials that will allow each use of third-party assertions to be represented as a set of LinkedClaims. 
-Such a data set will enable verifiers to evaluate the credibility of claims, including those sourced from outside the Verifiable Credential ecosystem.
+LinkedClaims addresses this fundamental need by providing a minimal but powerful format for connecting credentials cryptographically. This enables 
+verifiers to evaluate the credibility of claims from both within and outside the Verifiable Credential ecosystem, while giving individuals and organizations 
+the agency to make and verify claims on their own terms. Whether tracking disaster relief funds, documenting community development,
+or validating project reviews and research papers, LinkedClaims creates chains of trust that can be verified and connected. 
 
-Further, we propose to demonstrate the ability to compose several Verifiable Credentials into a single domain-specific 
-credential using the LinkedClaim vocabulary that will satisfy the domain requirements of the likely users.
+By facilitating rich shared datasets that inform trust decisions while satisfying domain specific requirements, 
+we know LinkedClaims will pave the way for a more connected and verifiable digital world.
 
-This approach will enable rich shared datasets to inform trust decisions while satisfying the requirements of 
-domain-specific end users. One of the intentions of LinkedClaims Verifiable Credentials is to give individuals 
-the agency to make such claims about themselves and others on their own terms.
 
 ## Coordination/Correspondence
 
