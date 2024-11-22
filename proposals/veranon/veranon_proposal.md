@@ -102,5 +102,5 @@ Well-known proof of personhood protocols include:
    - Have investigated and tested some promising approaches but still would appreciate advice here
 
 ## Outputs
-
+Outputs are described in Technical Goals
 
