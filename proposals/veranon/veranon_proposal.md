@@ -92,5 +92,5 @@ Well-known proof of personhood protocols include:
 
 
 ## Outputs
-
+Outputs are described in Technical Goals
 
