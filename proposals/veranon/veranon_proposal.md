@@ -78,7 +78,13 @@ A further goal is to include a pilot implementation of the protocol, setting up 
 
 
 ## Prior art
-
+Well-known proof of personhood protocols include:
+- [Anima](https://www.animaidentity.com)
+- [BrightID](https://www.brightid.org/)
+- [Idena](https://www.idena.io/)
+- [Proof of Humanity](https://proofofhumanity.id/)
+- [WorldCoin](https://worldcoin.org/)
+-  [Humanode](https://humanode.io/)
 
 
 ## Unresolved Questions
