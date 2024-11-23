@@ -36,7 +36,7 @@ VerAnon represents one potential approach to addressing the goals outlined in th
 - Providing a more organic web experience for users
 - Protecting user privacy through ZKPs (anonymous verification and unlinkable use of proofs across different services)
 
-This protocol aims to demonstrate how zero-knowledge technology can meet these goals while maintaining a somewhat familiar trust model.
+A larger motivation and vision for VerAnon is in expanding the use of existing identity systems. Where sybil resistance is easily achieved with low privacy guarantees, VerAnon would provide a solution to map a collection of identities uniquely and anonymously to Service Providers.
 
 ## Technical Goals
 
@@ -75,7 +75,7 @@ A further goal is to include a pilot implementation of the protocol, setting up 
 
 ## Coordination/Correspondence
 
-I will be working solo so no regular team meeting is needed. I would be open to providing a brief bi-weekly update on progress and blockers for whoever is interested.
+I would be open to providing a brief bi-weekly update on progress and blockers for whoever is interested.
 
 ## Prior art
 Well-known proof of personhood protocols include:
@@ -91,15 +91,19 @@ Well-known proof of personhood protocols include:
 ## Unresolved Questions
 
 - Identity verification process:
-   - Should a third party provider be used and if so, which options are most appropriate?
+   - Should a third party provider be used and if so, what are the options?
    - What is the appropriate amount of data to store about a registering Subject? 
    - Is there some unique digest or signature from a provider that can be used?
-   - If so, is it appropriate to maintain a public (on-chain) record associating these with Semaphore Identity Commitments? (Could enhance trust in the Manager)
+   - If so, can a Manager maintain a public (on-chain) record associating these with Semaphore Identity Commitments? (Could enhance trust)
 - Balancing incentives between Managers and Service Providers:
    - Would a Manager subscription or registration fee be appropriate to enshrine as an optional mechanism in the protocol?
    - Is it fair to expect Service Providers to be 'locked-in' to the protocol? ei. they would use the on-chain proof verification / account association and not break this off-chain to avoid fees
 - Mobile proof generation:
    - Have investigated and tested some promising approaches but still would appreciate advice here
+   - Specifically, witness generation techniques and proof generation complexity (function of group size)
+- Metatransactions and Relays
+   - Considering using [Gelato](https://www.gelato.network/relay)
+   - Is a custom solution a better approach?
 
 ## Outputs
 Outputs are described in Technical Goals
