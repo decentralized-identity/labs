@@ -29,32 +29,39 @@ LinkedClaims with https://github.com/Cooperation-org/LinkedClaims/blob/main/Link
 ## Motivation
 
 Trust shapes every interaction in our digital lives, from verifying academic credentials to tracking humanitarian aid. Yet we lack a universal 
-way to connect and verify claims across different systems. The Verifiable Credential ecosystem has encountered numerous use cases requiring third-party
-assertions and endorsements, but current solutions remain fragmented and inflexible.
+way to connect and verify claims across different systems. Verifiable Credentials enable the secure signing of a credential, but the credibility of that credential still relies on some trusted central registry, or cannot be verified at all.  
 
-LinkedClaims addresses this fundamental need by providing a minimal but powerful format for connecting credentials cryptographically. This enables 
-verifiers to evaluate the credibility of claims from both within and outside the Verifiable Credential ecosystem, while giving individuals and organizations 
-the agency to make and verify claims on their own terms. Whether tracking disaster relief funds, documenting community development,
+The real nature of trust is decentralized and relative to the trusting party. 
+
+LinkedClaims addresses this fundamental need by providing a minimal but powerful specification for **addressable claims** and the **cryptographic linking** of independently issued credentials or attestations, referred to here simply as "claims". This enables 
+verifiers to evaluate the credibility of claims based on their own roots of trust, as well as including data from both within and outside the Verifiable Credential ecosystem.  LinkedClaims also enable individuals and organizations 
+the agency to make and verify claims on their own terms, including the possibility of adversarial claims.  Whether tracking disaster relief funds, documenting community development,
 or validating project reviews and research papers, LinkedClaims creates chains of trust that can be verified and connected. 
 
 By facilitating rich shared datasets that inform trust decisions while satisfying domain specific requirements, 
-we know LinkedClaims will pave the way for a more connected and verifiable digital world.
+we believe LinkedClaims will pave the way for a more connected and verifiable digital world.
 
 
 ## Coordination/Correspondence
 
-- TBD:
+- Several workshop events will be set up and posted under the page https://linkedtrust.us/getstarted
+- Email correspondence may be sent to connect@linkedtrust.us
 
 ## Prior art and References
 
-Our current live demo and Rebooting the Web of Trust paper are available from our
-site https://linkedtrust.us and the work we are doing for the US Chambers of Commerce Foundation 
-is being published at http://opencreds.net (in process, one item is not working there yet). 
+Proposed [RFC for Linked Claims](https://github.com/Cooperation-org/LinkedClaims/blob/main/LinkedClaimsRFC.md)
 
-Our open source repositories are under https://github.com/Cooperation-org.
+[Composing Credentials via LinkedClaims and Cryptographic Binding](https://github.com/WebOfTrustInfo/rwot11-the-hague/blob/master/final-documents/composable-credentials.pdf) published in Rebooting the Web of Trust XI proceedings.
+
+Live demo of a general implementation of LinkedClaims at https://live.linkedtrust.us
+
+Live demo of a skills credentials implementation of LinkedClaims at https://opencreds.net sponsored by the US Chambers of Commerce Foundation and the T3 Innovation Network.  
+
+- Open source repositories: https://github.com/Cooperation-org.
+- NPM libraries: https://www.npmjs.com/org/cooperation
+- PyPI libraries: https://pypi.org/project/linked-claims-extractor/
    
-We have interest in the concept of LinkedClaims from the UN CRM/CEFACT committee on critical resource mining,
-from the US Chambers Foundation, SidiHub for digital identity, and some other groups and individuals.  
+We have interest in the concept of LinkedClaims from the [UN CRM/CEFACT committee](https://uncefact.github.io/project-crm/) on critical raw materials, the [US Chamber of Commerce Foundation](https://www.uschamberfoundation.org/), [SidiHub Digital Identity Community](https://sidi-hub.community/), and some other groups and individuals.  
 
 The intention is to have this be a lightweight open standard.
 
