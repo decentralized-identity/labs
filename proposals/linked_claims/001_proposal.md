@@ -2,7 +2,7 @@
 
 ## Metadata
 - Proposal Author(s): [Golda Velez](https://github.com/gvelez17) and [Agnes Koinange](https://github.com/Agneskoinange)
-- Lead(s): [Golda Velez](https://github.com/gvelez17), [Agnes Koinange](https://github.com/Agneskoinange) and [Phil Long](https://www.linkedin.com/in/longpd/)
+- Lead(s): [Golda Velez](https://www.linkedin.com/in/goldavelez/), [Agnes Koinange](https://github.com/Agneskoinange) and [Phil Long](https://www.linkedin.com/in/longpd/)
 - Status: [Proposed]()
 - Since: November 19, 2024
 - Expected End Date: February 6, 2025
