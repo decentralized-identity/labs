@@ -17,11 +17,13 @@
 
 ## Summary 
 
-The intention is to have a broad standard that is implementation independent, for making claims about 
-entities that can be connected together across different platforms, storages and implementations. Such claims may be public or private/access-gated.
+The intention is to have a broad standard that is implementation independent, for making claims that can be connected together across different platforms, storages and implementations. Such claims may be public or private/access-gated.
 
 In order to connect claims together, they must be addressable.  A key part of this work is to define what it means for a claim to be addressable and qualify as a LinkedClaim.
 That is, for a claim to have a long lived identifier so that it is possible to make validation or audit claims ABOUT the claim itself.  
+
+<img width="672" alt="patterns enabled by LinkedClaims" src="https://github.com/user-attachments/assets/bfc3aa76-e21c-4201-a40b-9ecbdfca1824">
+
 
 The goal of this work is to finalize and release the high level spec for 
 LinkedClaims with https://github.com/Cooperation-org/LinkedClaims/blob/main/LinkedClaimsRFC.md as a starting point, with input from potential users and implementors.
@@ -38,8 +40,10 @@ verifiers to evaluate the credibility of claims based on their own roots of trus
 the agency to make and verify claims on their own terms, including the possibility of adversarial claims.  Whether tracking disaster relief funds, documenting community development,
 or validating project reviews and research papers, LinkedClaims creates chains of trust that can be verified and connected. 
 
-By facilitating rich shared datasets that inform trust decisions while satisfying domain specific requirements, 
-we believe LinkedClaims will pave the way for a more connected and verifiable digital world.
+<img width="756" alt="image" src="https://github.com/user-attachments/assets/be515883-4b17-40eb-81db-eed6a96ed8f3">
+
+
+By facilitating rich shared datasets that inform trust decisions while satisfying domain specific requirements, we believe LinkedClaims will pave the way for a more connected and verifiable digital world.
 
 
 ## Coordination/Correspondence
@@ -66,6 +70,8 @@ We have interest in the concept of LinkedClaims from the [UN CRM/CEFACT committe
 The intention is to have this be a lightweight open standard.
 
 ## Unresolved Questions
+
+
 
 ## Outputs
 
