@@ -39,6 +39,7 @@ the agency to make and verify claims on their own terms, including the possibili
 or validating project reviews and research papers, LinkedClaims creates chains of trust that can be verified and connected. 
 
 <img width="756" alt="image" src="https://github.com/user-attachments/assets/be515883-4b17-40eb-81db-eed6a96ed8f3">
+<br>
 
 Further, LinkedClaims invite layering of trust over time, as discussed in the "Progressive Trust in Issuer Registries" document below.  The intitial creation of a durable identity does not in itself create trust, but it enables the later addition of attestations.
 
