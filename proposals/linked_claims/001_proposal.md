@@ -33,23 +33,23 @@ LinkedClaims with https://github.com/Cooperation-org/LinkedClaims/blob/main/Link
 Trust shapes every interaction in our digital lives, from verifying academic credentials to tracking humanitarian aid. Yet we lack a universal 
 way to connect and verify claims across different systems. Verifiable Credentials enable the secure signing of a credential, but the credibility of that credential still relies on some trusted central registry, or cannot be verified at all.  
 
-The real nature of trust is decentralized and relative to the trusting party. 
-
-LinkedClaims addresses this fundamental need by providing a minimal but powerful specification for **addressable claims** and the **cryptographic linking** of independently issued credentials or attestations, referred to here simply as "claims". This enables 
+LinkedClaims addresses this need by providing a minimal but powerful specification for **addressable claims** and the **cryptographic linking** of independently issued credentials or attestations, referred to here simply as "claims". This enables 
 verifiers to evaluate the credibility of claims based on their own roots of trust, as well as including data from both within and outside the Verifiable Credential ecosystem.  LinkedClaims also enable individuals and organizations 
 the agency to make and verify claims on their own terms, including the possibility of adversarial claims.  Whether tracking disaster relief funds, documenting community development,
 or validating project reviews and research papers, LinkedClaims creates chains of trust that can be verified and connected. 
 
 <img width="756" alt="image" src="https://github.com/user-attachments/assets/be515883-4b17-40eb-81db-eed6a96ed8f3">
 
-
-By facilitating rich shared datasets that inform trust decisions while satisfying domain specific requirements, we believe LinkedClaims will pave the way for a more connected and verifiable digital world.
+The real nature of trust is decentralized, non-absolute, and relative to the trusting party.  By facilitating rich shared datasets that inform trust decisions while satisfying domain specific requirements, we believe LinkedClaims will pave the way for a more connected and verifiable digital world.  
 
 
 ## Coordination/Correspondence
 
 - Several workshop events will be set up and posted under the page https://linkedtrust.us/getstarted
+- Technical discussion will be in [LinkedClaims Github issues](https://github.com/Cooperation-org/LinkedClaims/issues) 
 - Email correspondence may be sent to connect@linkedtrust.us
+
+The intention is to hold both technical workshops and discovery with stakeholders who may be potential users.  In particular existing technologies may be recognized as following the LinkedClaims requirements and used as demonstrations of linking together existing signed claims.
 
 ## Prior art and References
 
@@ -71,8 +71,18 @@ The intention is to have this be a lightweight open standard.
 
 ## Unresolved Questions
 
+- Is there a need for a specific "glue" vocabulary such as http://cooperation.org/credentials/v1/
+- How to resolve the tension between using a human-viewable subject URI versus a hashable signed credential as the subject of a claim?  Could there be a content type or query parameter that switches, but in this case how to ensure the two are aligned?
+- Should the canonical identifier of a claim be included in the claim itself?
+- Review each of the MUST, SHOULD and MAY in the RFC for usefulness and testability
+- Can we write tests for being a LinkedClaim without a single canonical vocabulary?  
 
+and the largest question
+
+ - What would motivate stakeholders to publish LinkedClaims and expose their claims to external validation?  Do non-protocol entities see a use for this?
 
 ## Outputs
 
 - Specification: https://github.com/Cooperation-org/LinkedClaims/blob/main/LinkedClaimsRFC.md
+- Paper around the spec with motivation, howto, and identifying existing LinkedClaims in the wild 
+- libraries for implementors
