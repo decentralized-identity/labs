@@ -40,7 +40,9 @@ or validating project reviews and research papers, LinkedClaims creates chains o
 
 <img width="756" alt="image" src="https://github.com/user-attachments/assets/be515883-4b17-40eb-81db-eed6a96ed8f3">
 
-The real nature of trust is decentralized, non-absolute, and relative to the trusting party.  By facilitating rich shared datasets that inform trust decisions while satisfying domain specific requirements, we believe LinkedClaims will pave the way for a more connected and verifiable digital world.  
+Further, LinkedClaims invite layering of trust over time, as discussed in the "Progressive Trust in Issuer Registries" document below.  The intitial creation of a durable identity does not in itself create trust, but it enables the later addition of attestations.
+
+The real nature of trust is decentralized, progressive, and relative to the trusting party.  By facilitating rich shared datasets that inform trust decisions while satisfying domain specific requirements, we believe LinkedClaims will pave the way for a more connected and verifiable digital world.  
 
 
 ## Coordination/Correspondence
@@ -54,6 +56,8 @@ The intention is to hold both technical workshops and discovery with stakeholder
 ## Prior art and References
 
 Proposed [RFC for Linked Claims](https://github.com/Cooperation-org/LinkedClaims/blob/main/LinkedClaimsRFC.md)
+
+[IIW39_S1E_Progressive Trust in Issuer Registries with LinkedClaims](https://docs.google.com/document/d/1Rl1GsTF843aSs1kE2-BO5rlDy2yliDYeOokdmZ17r5w/edit?tab=t.0)
 
 [Composing Credentials via LinkedClaims and Cryptographic Binding](https://github.com/WebOfTrustInfo/rwot11-the-hague/blob/master/final-documents/composable-credentials.pdf) published in Rebooting the Web of Trust XI proceedings.
 
