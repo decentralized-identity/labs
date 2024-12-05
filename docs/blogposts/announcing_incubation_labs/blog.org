@@ -1,0 +1,89 @@
+#+title: DIF Labs: SSI Market Gets An Innovation Hub
+#+setupfile: https://andorsk.github.io/org-themes/brew.setup
+
+#+begin_src text
+,------.  ,--.,------.    ,--.           ,--.
+|  .-.  \ |  ||  .---'    |  |    ,--,--.|  |-.  ,---.
+|  |  \  :|  ||  `--,     |  |   ' ,-.  || .-. '(  .-'
+|  '--'  /|  ||  |`       |  '--.\ '-'  || `-' |.-'  `)
+`-------' `--'`--'        `-----' `--`--' `---' `----'
+#+end_src
+
+* DIF Labs accelerates the DeID market innovation
+
+DIF’s commitment to supporting builders and doers in the decentralized identity space has led to the launch of DIF Labs, an initiative aimed at transforming how decentralized identity solutions are built, tested, and scaled. DIF Labs bridges the gap between brilliant ideas and market-ready solutions, empowering developers, startups, and industry innovators to collaborate, experiment, and grow.
+
+* Why DIF Labs?
+** Markets need a safe space to cocreate too!
+
+file:Labs.png
+
+DIF Labs was born from the need for a dedicated space where creators in decentralized identity can focus on practical innovation. Traditional standards organizations can be slow and formal, while incubators may lack the technical ecosystem DIF provides. DIF Labs is uniquely positioned to address these gaps, offering participants:
+- **Speed and Flexibility**: Projects in DIF Labs aim to achieve milestones within months, not years.
+- **Open and Inclusive Governance**: All outputs are open-source and royalty-free, allowing for broad community adoption.
+- **Knowledge Pool**: Access to a network of expertise across technical, legal, and market domains.
+
+DIF Labs stands apart by supporting real-world applications rather than just standard development. It’s a space where builders can create impactful solutions without the bureaucratic overhead typical of many organizations. Projects are any decentralized identity stack, not necessarily based on DIF-based specifications.
+
+* The Beta (β) Cohort: Iterative Process Development
+The inaugural DIF Labs Beta Cohort began **November 19, 2024**, and runs through **February 2025**. This first iteration is a learning process for everyone involved, with high-touch engagement from the chairs to refine the structure and maximize impact. The chairs hand-selected projects with leads they knew were capable and focused on completing some amazing work.
+
+** Meet the initial cohort of projects:
+**** BTCO Verifiable Credentials Framework
+ [[./btco.png]]
+- **Lead**: Brian Richter
+- **Goal**: Establish a standardized framework for implementing verifiable credentials on Bitcoin using Ordinal inscriptions.
+- **Use Cases**: Event tickets, digital collectibles, ownership records, Verifiable AI Inference credentials.
+- **Proposal**: [[https://example.com][Read the project proposal here.]]
+**** Linked Claims
+[[./linked_claims.png]]
+- **Leads**: Golda Velez, Agnes Koinange, Phil Long
+- **Goal**: Build progressive trust through combining attestations and release the high-level specification for LinkedClaims to further the LinkedTrust project.
+- **Proposal**: [[https://example.com][Read the proposal here.]]
+**** VerAnon
+[[./veranon.png]]
+- **Lead**: Alex Hache
+- **Goal**: Introduce a protocol for anonymous personhood verification using Semaphore, a zero-knowledge group membership protocol.
+- **Proposal**: [[https://example.com][Read the proposal here.]]
+
+** Timeline:
+- **Check-ins**: Scheduled throughout the three months.
+- **Show and Tell**: **February 18, 2025** - Projects will be showcased to the community.
+
+* Meet the Mentors and Chairs
+
+** Expert Mentors:
+- **[[https://www.linkedin.com/in/anagoessens/?originalSubdomain=nl][Ana Goessens]]**: CEO at Animo Solutions. Makes decentralized identity easy. CEO at Animo.id, all-round company/team building in decentralized ID space.
+- **[[https://antfu.me/][Anthony Fu]]**: Open Sourcer. Core contributor to Vite/NextJS etc., how to build open-source projects.
+- **[[https://www.linkedin.com/in/dbuchner/][Daniel Buchner]]**: TBD/Block, Decentralized Web Nodes.
+- **[[https://www.linkedin.com/in/jellefm/?originalSubdomain=nl][Jelle Millenaar]]**: Co-Founder and CEO Impierce Technologies, DID evangelist.
+- **[[https://www.linkedin.com/in/markus-sabadello-353a0821/?originalSubdomain=at][Markus Sabadello]]**: Danube Tech, Decentralized Identity Foundation, Sovrin Foundation. Core contributor to Universal Resolver and Universal Registrar, go-to expert for DID Resolution spec.
+- **[[https://www.nikgraf.com/][Nik Graf]]**: Local-first software expert and Founder at Serenity.
+- **[[https://www.linkedin.com/in/otto-mora/?originalSubdomain=cr][Otto Mora]]**: ZK Identity Maxi @ Privado.ID (formerly Polygon ID).
+- **[[https://www.linkedin.com/in/rizel-bobb-semple/][Rizel Scarlett]]**: Staff Developer Advocate at Block | Artificial Intelligence & Open Source.
+- **[[https://www.linkedin.com/in/rodboothby/][Rod Boothby]]**: Digital Identity Leader | VP Product | 2X Co-Founder CEO, COO $150M Incremental Revenue | Ex Wells Fargo, AIG, EY, Santander Grew npm Inc to #1 Javascript Repo with 20M Developer users.
+- **[[https://www.linkedin.com/in/mccown/][Steve McCown]]**: Chief Architect, Applied Crypto R&D, CISM, CDPSE, Patented Inventor.
+
+** Chairs:
+DIF Labs is led by the following chairs, who lead DIF Labs with a focus on strategic direction and ensuring a collaborative environment.
+
+- **[[https://www.linkedin.com/in/andorsk][Andor Kesselman]]**: CTO, Andor Labs.
+- **[[https://www.linkedin.com/in/banerjeeankur/][Ankur Banerjee]]**: CTO, Creds.xyz & cheqd.
+- **[[https://www.linkedin.com/in/daniel-thompson-yvetot-a98301222/][Daniel Thompson-Yvetot]]**: Cofounder, Tauri Apps.
+
+* What’s Next?
+
+DIF Labs is more than a program—it’s a movement to propel decentralized identity into its next phase of growth. By fostering a space for practical, collaborative innovation, DIF Labs aims to cultivate solutions that tackle pressing challenges, from supply chain transparency to interoperability in health and employment applications.
+
+We invite you to follow our journey and participate in this groundbreaking initiative:
+
+- Join the conversation on [[https://discord.gg/48DgSG4skR][DIF Labs Discord]]
+- Explore projects on [[https://github.com/decentralized-identity/labs][Github]]
+- Attend the meetings:
+  - Meetings are the third Tuesday of every month at 11am ET
+- [[https://calendar.google.com/calendar/u/0?cid=ZGVjZW50cmFsaXplZC5pZGVudGl0eUBnbWFpbC5jb20][Subscribe to DIF's calendar]]
+- Stay tuned for updates and opportunities to get involved
+
+You’ll be hearing more about our Mentors, Chairs, and Cohorts in the coming months. Stay tuned as we unveil even more Mentors as well.
+
+Together, we’re building the future of decentralized identity. Welcome to DIF Labs!
