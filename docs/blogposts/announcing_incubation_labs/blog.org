@@ -16,7 +16,7 @@ DIF’s commitment to supporting builders and doers in the decentralized identit
 * Why DIF Labs?
 ** Markets need a safe space to cocreate too!
 
-file:Labs.png
+[[https://raw.githubusercontent.com/decentralized-identity/labs/refs/heads/main/docs/blogposts/announcing_incubation_labs/Labs.png]]
 
 DIF Labs was born from the need for a dedicated space where creators in decentralized identity can focus on practical innovation. Traditional standards organizations can be slow and formal, while incubators may lack the technical ecosystem DIF provides. DIF Labs is uniquely positioned to address these gaps, offering participants:
 - **Speed and Flexibility**: Projects in DIF Labs aim to achieve milestones within months, not years.
@@ -30,18 +30,18 @@ The inaugural DIF Labs Beta Cohort began **November 19, 2024**, and runs through
 
 ** Meet the initial cohort of projects:
 **** BTCO Verifiable Credentials Framework
- [[./btco.png]]
+[[https://github.com/decentralized-identity/labs/blob/main/docs/blogposts/announcing_incubation_labs/btco.png?raw=true]]
 - **Lead**: Brian Richter
 - **Goal**: Establish a standardized framework for implementing verifiable credentials on Bitcoin using Ordinal inscriptions.
 - **Use Cases**: Event tickets, digital collectibles, ownership records, Verifiable AI Inference credentials.
 - **Proposal**: [[https://example.com][Read the project proposal here.]]
 **** Linked Claims
-[[./linked_claims.png]]
+[[https://github.com/decentralized-identity/labs/blob/main/docs/blogposts/announcing_incubation_labs/linked_claims.png?raw=true]]
 - **Leads**: Golda Velez, Agnes Koinange, Phil Long
 - **Goal**: Build progressive trust through combining attestations and release the high-level specification for LinkedClaims to further the LinkedTrust project.
 - **Proposal**: [[https://example.com][Read the proposal here.]]
 **** VerAnon
-[[./veranon.png]]
+[[https://github.com/decentralized-identity/labs/blob/main/docs/blogposts/announcing_incubation_labs/veranon.png?raw=true]]
 - **Lead**: Alex Hache
 - **Goal**: Introduce a protocol for anonymous personhood verification using Semaphore, a zero-knowledge group membership protocol.
 - **Proposal**: [[https://example.com][Read the proposal here.]]
