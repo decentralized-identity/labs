@@ -1,4 +1,4 @@
-#+title: DIF Labs: SSI Market Gets An Innovation Hub
+#+title: DIF Labs: Decentralized Identity Innovation Group
 #+setupfile: https://andorsk.github.io/org-themes/brew.setup
 
 #+begin_src text
@@ -9,12 +9,11 @@
 `-------' `--'`--'        `-----' `--`--' `---' `----'
 #+end_src
 
-* DIF Labs accelerates the DeID market innovation
+* DIF Labs accelerates Decentralized Identity market innovation
 
 DIF’s commitment to supporting builders and doers in the decentralized identity space has led to the launch of DIF Labs, an initiative aimed at transforming how decentralized identity solutions are built, tested, and scaled. DIF Labs bridges the gap between brilliant ideas and market-ready solutions, empowering developers, startups, and industry innovators to collaborate, experiment, and grow.
 
 * Why DIF Labs?
-** Markets need a safe space to cocreate too!
 
 [[https://raw.githubusercontent.com/decentralized-identity/labs/refs/heads/main/docs/blogposts/announcing_incubation_labs/Labs.png]]
 
@@ -23,30 +22,30 @@ DIF Labs was born from the need for a dedicated space where creators in decentra
 - **Open and Inclusive Governance**: All outputs are open-source and royalty-free, allowing for broad community adoption.
 - **Knowledge Pool**: Access to a network of expertise across technical, legal, and market domains.
 
-DIF Labs stands apart by supporting real-world applications rather than just standard development. It’s a space where builders can create impactful solutions without the bureaucratic overhead typical of many organizations. Projects are any decentralized identity stack, not necessarily based on DIF-based specifications.
+DIF Labs stands apart by supporting real-world applications rather than just
+standard development. It’s a space where builders can focus on creating solutions without the bureaucratic overhead typical of many organizations. Projects are any decentralized identity stack, not necessarily based on DIF-based specifications.
 
 * The Beta (β) Cohort: Iterative Process Development
-The inaugural DIF Labs Beta Cohort began **November 19, 2024**, and runs through **February 2025**. This first iteration is a learning process for everyone involved, with high-touch engagement from the chairs to refine the structure and maximize impact. The chairs hand-selected projects with leads they knew were capable and focused on completing some amazing work.
+The inaugural DIF Labs Beta Cohort began **November 2024**, and runs through **February 2025**. This first iteration is a learning process for everyone involved, with high-touch engagement from the chairs to refine the structure and maximize impact. The chairs hand-selected projects with leads they knew were capable and focused on completing some amazing work.
 
-** Meet the initial cohort of projects:
-**** BTCO Verifiable Credentials Framework
+* [[https://github.com/decentralized-identity/labs/blob/main/proposals/btco-vc/btco_vc_proposal.md][Project: Bitcoin Ordinals Verifiable Credentials Framework]]
 [[https://github.com/decentralized-identity/labs/blob/main/docs/blogposts/announcing_incubation_labs/btco.png?raw=true]]
 - **Lead**: Brian Richter
 - **Goal**: Establish a standardized framework for implementing verifiable credentials on Bitcoin using Ordinal inscriptions.
 - **Use Cases**: Event tickets, digital collectibles, ownership records, Verifiable AI Inference credentials.
 - **Proposal**: [[https://example.com][Read the project proposal here.]]
-**** Linked Claims
+* [[https://github.com/decentralized-identity/labs/blob/main/proposals/linked_claims/001_proposal.md][Project: Linked Claims]]
 [[https://github.com/decentralized-identity/labs/blob/main/docs/blogposts/announcing_incubation_labs/linked_claims.png?raw=true]]
 - **Leads**: Golda Velez, Agnes Koinange, Phil Long
 - **Goal**: Build progressive trust through combining attestations and release the high-level specification for LinkedClaims to further the LinkedTrust project.
 - **Proposal**: [[https://example.com][Read the proposal here.]]
-**** VerAnon
+* [[https://github.com/decentralized-identity/labs/blob/main/proposals/veranon/veranon_proposal.md][Project: VerAnon]]
 [[https://github.com/decentralized-identity/labs/blob/main/docs/blogposts/announcing_incubation_labs/veranon.png?raw=true]]
 - **Lead**: Alex Hache
 - **Goal**: Introduce a protocol for anonymous personhood verification using Semaphore, a zero-knowledge group membership protocol.
 - **Proposal**: [[https://example.com][Read the proposal here.]]
 
-** Timeline:
+* Timeline
 - **Check-ins**: Scheduled throughout the three months.
 - **Show and Tell**: **February 18, 2025** - Projects will be showcased to the community.
 
@@ -64,26 +63,34 @@ The inaugural DIF Labs Beta Cohort began **November 19, 2024**, and runs through
 - **[[https://www.linkedin.com/in/rodboothby/][Rod Boothby]]**: Digital Identity Leader | VP Product | 2X Co-Founder CEO, COO $150M Incremental Revenue | Ex Wells Fargo, AIG, EY, Santander Grew npm Inc to #1 Javascript Repo with 20M Developer users.
 - **[[https://www.linkedin.com/in/mccown/][Steve McCown]]**: Chief Architect, Applied Crypto R&D, CISM, CDPSE, Patented Inventor.
 
-** Chairs:
+** Chairs
 DIF Labs is led by the following chairs, who lead DIF Labs with a focus on strategic direction and ensuring a collaborative environment.
 
-- **[[https://www.linkedin.com/in/andorsk][Andor Kesselman]]**: CTO, Andor Labs.
-- **[[https://www.linkedin.com/in/banerjeeankur/][Ankur Banerjee]]**: CTO, Creds.xyz & cheqd.
-- **[[https://www.linkedin.com/in/daniel-thompson-yvetot-a98301222/][Daniel Thompson-Yvetot]]**: Cofounder, Tauri Apps.
+- **[[https://www.linkedin.com/in/andorsk][Andor Kesselman]]**: CTO Andor Labs, Co-Chair of the Technical Steering Committee at DIF, Lead of the Technical Workstream at Global Acceptance Network.
+- **[[https://www.linkedin.com/in/banerjeeankur/][Ankur Banerjee]]**: CTO/Co-Founder at Creds.xyz & cheqd, Co-Chair of the Technical Steering Committee at DIF.
+- **[[https://www.linkedin.com/in/daniel-thompson-yvetot-a98301222/][Daniel
+  Thompson-Yvetot]]**: Cofounder of Tauri Apps, CEO of CrabNebula, Author of "Manufacturing European Software", DIF Labs Co-chair, European Regulatory Expert, Public Speaker, Coach.
 
-* What’s Next?
+* What’s Next And Getting Involved?
 
-DIF Labs is more than a program—it’s a movement to propel decentralized identity into its next phase of growth. By fostering a space for practical, collaborative innovation, DIF Labs aims to cultivate solutions that tackle pressing challenges, from supply chain transparency to interoperability in health and employment applications.
+DIF Labs is more than a program—it’s a movement to propel decentralized identity
+into its next phase of growth. By fostering a space for practical, collaborative
+innovation, DIF Labs aims to cultivate solutions that tackle pressing
+industry driven challenges in the decentralized identity space.
 
-We invite you to follow our journey and participate in this groundbreaking initiative:
+We invite you to follow our journey and participate in this initiative:
 
 - Join the conversation on [[https://discord.gg/48DgSG4skR][DIF Labs Discord]]
 - Explore projects on [[https://github.com/decentralized-identity/labs][Github]]
 - Attend the meetings:
   - Meetings are the third Tuesday of every month at 11am ET
-- [[https://calendar.google.com/calendar/u/0?cid=ZGVjZW50cmFsaXplZC5pZGVudGl0eUBnbWFpbC5jb20][Subscribe to DIF's calendar]]
+-
+  [[https://calendar.google.com/calendar/u/0?cid=ZGVjZW50cmFsaXplZC5pZGVudGl0eUBnbWFpbC5jb20][Subscribe
+  to DIF's calendar]]
 - Stay tuned for updates and opportunities to get involved
 
-You’ll be hearing more about our Mentors, Chairs, and Cohorts in the coming months. Stay tuned as we unveil even more Mentors as well.
+You’ll be hearing more about our Mentors, Chairs, and Cohorts in the coming
+months. Stay tuned as we unveil even more Mentors as well.
 
-Together, we’re building the future of decentralized identity. Welcome to DIF Labs!
+After Beta cohort is done, we will be opening up for new projects to run through
+DIF Labs. Together, we’re building the future of decentralized identity.
