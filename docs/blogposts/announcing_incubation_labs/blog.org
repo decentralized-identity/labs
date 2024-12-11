@@ -14,6 +14,7 @@
 DIF’s commitment to supporting builders and doers in the decentralized identity space has led to the launch of DIF Labs, an initiative aimed at transforming how decentralized identity solutions are built, tested, and scaled. DIF Labs bridges the gap between brilliant ideas and market-ready solutions, empowering developers, startups, and industry innovators to collaborate, experiment, and grow.
 
 * Why DIF Labs?
+
 ** Markets need a safe space to cocreate too!
 
 [[https://raw.githubusercontent.com/decentralized-identity/labs/refs/heads/main/docs/blogposts/announcing_incubation_labs/Labs.png]]
