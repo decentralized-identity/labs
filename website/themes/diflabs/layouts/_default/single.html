@@ -1,0 +1,72 @@
+{{ define "main" }}
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+    }
+
+    .content-wrapper {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    time {
+      display: block;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    .content-wrapper p {
+      margin: 1rem 0;
+    }
+
+    .tags {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid #00ff00;
+    }
+
+    .tags span {
+      display: inline-block;
+      background: #007BFF; /* Primary blue for tags */
+      color: #00ff00;
+      font-size: 0.9rem;
+      padding: 0.3rem 0.6rem;
+      margin: 0.2rem;
+      border-radius: 16px;
+      text-decoration: none;
+    }
+
+    .tags span:hover {
+      background: #0056b3; /* Slightly darker blue on hover */
+    }
+  </style>
+
+  <div class="content-wrapper">
+
+    <h1>{{ .Title }}</h1>
+
+    {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+    {{ $dateHuman := .Date | time.Format ":date_long" }}
+    <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+
+    <div class="toc">{{ .TableOfContents }}</div>
+
+    <div class="content">
+      {{ .Content }}
+    </div>
+
+    <div class="tags">
+      {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+    </div>
+  </div>
+{{ end }}

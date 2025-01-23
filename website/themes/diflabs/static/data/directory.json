@@ -1,0 +1,104 @@
+{
+    "mentors": [
+        {
+            "name": "Ana Goessens",
+            "role": "CEO at Animo Solutions",
+            "img": "https://media.licdn.com/dms/image/v2/C4E03AQF8vtrMdUf3Gw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1598898530884?e=1743033600&v=beta&t=dDdOEYpSFVoWYL5NSpP4iObZIuvGkEUU0sQtxdrLybI",
+            "profile_url": "https://www.linkedin.com/in/anagoessens/"
+        },
+        {
+            "name": "Anthony Fu",
+            "role": "Core contributor to Vite/NextJS",
+            "img": "https://avatars.githubusercontent.com/u/11247099?v=4",
+            "profile_url": "https://antfu.me/"
+        },
+        {
+            "name": "Daniel Buchner",
+            "role": "TBD/Block, Decentralized Web Nodes",
+            "img": "https://media.licdn.com/dms/image/v2/C4E03AQE_nIUuQ_6Wug/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516336327960?e=1743033600&v=beta&t=f6A1WU0QbNCosYqEHQ2In8FAFeRz2joErbrI3MawRW0",
+            "profile_url": "https://www.linkedin.com/in/dbuchner/"
+        },
+        {
+            "name": "Jelle Millenaar",
+            "role": "CEO Impierce Technologies",
+            "img": "https://media.licdn.com/dms/image/v2/D4E03AQFAL86QT_iT0g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1667482996734?e=1743033600&v=beta&t=RP5TsrD8PgccMibuN1Q2-2FFJT-LfBQ98K1vDwyc20o",
+            "profile_url": "https://www.linkedin.com/in/jellefm/"
+        },
+        {
+            "name": "Markus Sabadello",
+            "role": "Expert in DID Resolution spec",
+            "img": "https://media.licdn.com/dms/image/v2/C4D03AQGQ_F-nXoo4XQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1516955677202?e=1743033600&v=beta&t=STp5QTUGux9SJVd0I_8XYxx8BuosrsHDwuipW53cooc",
+            "profile_url": "https://www.linkedin.com/in/markus-sabadello-353a0821/"
+        },
+        {
+            "name": "Matthew McKinney",
+            "role": "Head of Growth @ ArcBlock",
+            "img": "https://media.licdn.com/dms/image/v2/C4E03AQF1GW0rnUQeyw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1554222331699?e=1743033600&v=beta&t=7FesTuOhvoLngqd53HjsDw1WnFN_g7-h7RzaxEflu4o",
+            "profile_url": "https://www.linkedin.com/in/matthew-mckinney/"
+        },
+        {
+            "name": "Nik Graf",
+            "role": "Founder at Serenity",
+            "img": "https://www.nikgraf.com/static/portrait.jpg",
+            "profile_https": "url://www.nikgraf.com/"
+        },
+        {
+            "name": "Otto Mora",
+            "role": "ZK Identity Maxi @ Privado.ID",
+            "img": "https://media.licdn.com/dms/image/v2/D4E03AQFVBTtDC2AT5w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1721661434835?e=1743033600&v=beta&t=iSVDH-m3ZrKXHfNkXrtpgnMfAAZoV8fQOAi9CE3AbTM",
+            "profile_url": "https://www.linkedin.com/in/otto-mora/"
+        }
+    ],
+    "chairs": [
+        {
+            "name": "Andor Kesselman",
+            "role": "CTO Andor Labs",
+            "img": "https://media.licdn.com/dms/image/v2/D5603AQE_CdV6brBxwg/profile-displayphoto-shrink_400_400/B56ZRwIgr5HwAg-/0/1737048067685?e=1743033600&v=beta&t=4evGkdJ_9g_O9YTN4ETc_-KbjHjL3AJggDBV_yURzbY",
+            "profile_url": "https://www.linkedin.com/in/andorsk/"
+        },
+        {
+            "name": "Ankur Banerjee",
+            "role": "Co-Founder at Creds.xyz",
+            "img": "https://media.licdn.com/dms/image/v2/C4D03AQFJSv8blc5A4w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1545389714434?e=1743033600&v=beta&t=L0ulyS-oqVOA5nkyydpMY4hJpiAPOTDvuAFMc0QG-9E",
+            "profile_url": "https://www.linkedin.com/in/banerjeeankur/"
+        },
+        {
+            "name": "Daniel Thompson-Yvetot",
+            "role": "Cofounder of Tauri Apps",
+            "img": "https://media.licdn.com/dms/image/v2/C5603AQGvyQSEq0erMg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1632910113521?e=1743033600&v=beta&t=MbJQ5-9t-ULkoPcf0dLLIph_u7zGQdCeILsf9kXj024",
+            "profile_url": "https://www.linkedin.com/in/daniel-thompson-yvetot-a98301222/"
+        }
+    ],
+    "leads": [
+        {
+            "name": "Brian Richter",
+            "role": "Bitcoin Ordinals Verifiable Credentials",
+            "img": "https://media.licdn.com/dms/image/v2/C5603AQH93_qwBW3SPg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1575019225184?e=1743033600&v=beta&t=tDcoT9coxvtztyd01SWX0FjnhcqNojmJG6RRjinPkVo",
+            "profile_url": "https://www.linkedin.com/in/brianrichter3/?originalSubdomain=ca"
+        },
+        {
+            "name": "Golda Velez",
+            "role": "Linked Claims",
+            "img": "https://media.licdn.com/dms/image/v2/C4E03AQExnQaHVgyxEg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517696714759?e=1743033600&v=beta&t=4hWvwFtAqJGakyr5CFtgzBdLEWjITsBB6xw8Fp5oZRg",
+            "profile_url": "https://www.linkedin.com/in/goldavelez/"
+        },
+        {
+            "name": "Agnes Koinange",
+            "role": "Linked Claims",
+            "img": "https://media.licdn.com/dms/image/v2/C4D03AQEzSJdeD3bAzg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1660134361910?e=1743033600&v=beta&t=yfLMGk1gu4FSP_YdtHEXux4gkpDFoD9OL3EukQymnLA",
+            "profile_url": "https://www.linkedin.com/in/agnes-koinange/"
+        },
+        {
+            "name": "Phillip Long",
+            "role": "Linked Claims",
+            "img": "https://media.licdn.com/dms/image/v2/D4E03AQEPu4kYBkzJpA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1725898760627?e=1743033600&v=beta&t=HroO5GglwOfe0dgemp1Dv9I0fS_9ysFqMbmSuH-0RNk",
+            "profile_url": "https://www.linkedin.com/in/longpd/"
+        },
+        {
+            "name": "Alex Hache",
+            "role": "VerAnon",
+            "img": "https://media.licdn.com/dms/image/v2/D5603AQHIJ3jk3gn-yw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1697054471632?e=1743033600&v=beta&t=kWVYHp_lLWvFKVwIcyv5LE0xCfK6iK62vzq7pXZYvqo",
+            "profile_url": "https://www.linkedin.com/in/alex-hache-86839727b/?originalSubdomain=ca"
+        }
+    ]
+}

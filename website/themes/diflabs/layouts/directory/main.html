@@ -1,0 +1,44 @@
+{{ define "main" }}
+{{ $css := resources.Get "css/directory.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}">
+
+<div class="container">
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search people..." onkeyup="filterAvatars()">
+    </div>
+
+    <h2 id="mentors">Expert Mentors</h2>
+    <div class="avatar-grid" id="mentors-grid">
+        <!-- Mentors will be populated here -->
+    </div>
+
+    <h2 id="chairs">Chairs</h2>
+    <div class="avatar-grid" id="chairs-grid">
+        <!-- Chairs will be populated here -->
+    </div>
+
+    <h2 id="leads">Project Leads</h2>
+    <div class="avatar-grid" id="leads-grid">
+        <!-- Project Leads will be populated here -->
+    </div>
+</div>
+
+<div class="overlay" id="modalOverlay"></div>
+<div class="modal" id="infoModal">
+    <div class="profile-img">
+    <img id="modalImg" src="${person.img}" alt="Profile image" 
+         onerror="this.style.display='none'"/>
+    </div>
+    <h2 id="modalName"></h2>
+    <p id="modalRole"></p>
+    <p id="modalDescription"></p>
+    <p id="modalLocation"></p>
+    <a id="modalProfileLink" href="#" target="_blank" rel="noopener noreferrer">View Profile</a>
+    <br/>
+    <button class="close-btn" onclick="closeModal()">Close</button>
+</div>
+
+<!-- Include the Directory JavaScript -->
+{{ $js := resources.Get "js/directory.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" defer></script>
+{{ end }}

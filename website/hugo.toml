@@ -1,0 +1,8 @@
+baseURL = 'http://localhost:1313'
+languageCode = 'en-us'
+theme = "diflabs"
+title = 'DIF Labs'
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

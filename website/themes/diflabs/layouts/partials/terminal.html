@@ -1,0 +1,16 @@
+<div class="ai-terminal">
+    <div id="terminal-output">
+        <p>Welcome to the DIF Labs Terminal. Ask me questions like "What is DIF Labs?!"</p>
+    </div>
+    <div id="terminal-input">
+        <span>&gt;</span>
+        <input type="text" id="command-input" autofocus autocomplete="off" />
+    </div>
+</div>
+
+<!-- Include Terminal-Specific Styles and Scripts -->
+{{ $css := resources.Get "css/terminal.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}">
+
+{{ $js := resources.Get "js/terminal.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" defer></script>
