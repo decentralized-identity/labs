@@ -2,11 +2,8 @@ name: Deploy Hugo Website to GitHub Pages
 
 
 on:
-  pull_request:
-    branches:
-      - main
-    types:
-      - closed
+  branches:
+    - main
 
 jobs:
   build-deploy:
