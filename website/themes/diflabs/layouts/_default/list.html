@@ -1,0 +1,60 @@
+{{ define "main" }}
+  <style>
+    .experiment-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1em; /* Add space between cards */
+    }
+
+    .experiment-card {
+      display: block; /* Allow the <a> to behave like a block element */
+      text-decoration: none; /* Remove underline from links */
+      color: inherit; /* Inherit text color for the link */
+      border: 1px solid #ddd; /* Add a border to the card */
+      border-radius: 5px; /* Optional: Rounded corners */
+      padding: 1em; /* Add padding inside the card */
+      transition: background-color 0.3s; /* Smooth hover effect */
+    }
+
+    .experiment-card h2 {
+      margin-bottom: 0em;
+    }
+
+    .experiment-card p {
+      margin-top: 0em;
+      margin-bottom: 0.5em;
+    }
+
+    .tags {
+      margin-top: 0.5em;
+    }
+
+    .tags span {
+      display: inline-block;
+      background: #FFB000; /* Blue background for tags */
+      color: #fff; /* White text */
+      font-size: 0.8rem;
+      padding: 0.2em 0.5em;
+      margin: 0.2em;
+      border-radius: 3px; /* Rounded corners for tags */
+      text-decoration: none;
+    }
+
+    .tags span:hover {
+      background: #00ff00; /* Darker blue on hover */
+    }
+  </style>
+  <div class="experiment-list">
+    {{ range .Pages }}
+      <a href="{{ .RelPermalink }}" class="experiment-card" target="_blank">
+        <h2>{{ .Title }}</h2>
+        <p><strong>Description:</strong> {{ .Summary }}</p>
+        <div class="tags">
+          {{ range .Params.tags }}
+            <span>{{ . }}</span>
+          {{ end }}
+        </div>
+      </a>
+    {{ end }}
+  </div>
+{{ end }}

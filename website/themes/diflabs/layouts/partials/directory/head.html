@@ -1,0 +1,3 @@
+{{ $directoryCSS := resources.Get "css/directory.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $directoryCSS.RelPermalink }}">
+<title>DIF Labs Directory</title>

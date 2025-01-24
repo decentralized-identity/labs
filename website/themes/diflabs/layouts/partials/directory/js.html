@@ -1,0 +1,2 @@
+{{ $directoryJS := resources.Get "js/directory.js" | minify | fingerprint }}
+<script src="{{ $directoryJS.RelPermalink }}" defer></script>

@@ -1,0 +1,35 @@
+[
+    {
+        "title": "Bitcoin Ordinals Verifiable Credentials Framework",
+        "description": "Establish a standardized framework for implementing verifiable credentials on Bitcoin using Ordinal inscriptions.",
+        "long_description": "This proposal outlines a framework built on the did:btco method, associating DIDs with specific ordinals for tamper-proof digital artifacts. By leveraging Bitcoin’s security and decentralization, it aims to enable on-chain verifiable credentials for use cases such as event tickets, ownership records, and AI-generated content. Emphasis is on privacy, scalability, and seamless integration with existing W3C VC and DID standards.",
+        "timeline": "November 28, 2024 - January 31, 2025",
+        "leads": ["Brian Richter"],
+        "cohort": "Beta",
+        "link": "https://github.com/decentralized-identity/labs-btco-vc",
+        "tags": ["Bitcoin", "Verifiable Credentials", "Decentralized Identifiers"],
+        "proposal": "https://github.com/decentralized-identity/labs/blob/main/proposals/btco-vc/btco_vc_proposal.md"
+    },
+    {
+        "title": "Linked Claims",
+        "description": "Build progressive trust through combining attestations and release the high-level specification for LinkedClaims to further the LinkedTrust project.",
+        "long_description": "LinkedClaims defines a minimal but powerful specification for addressable claims that can be cryptographically linked across different platforms and implementations. This ensures that verifiers can evaluate chains of trust based on their own roots of trust. The work includes finalizing the high-level spec for LinkedClaims, organizing stakeholder workshops, and producing libraries for implementers. The intended result is a lightweight open standard facilitating decentralized and progressively built trust.",
+        "timeline": "November 19, 2024 - February 6, 2025",
+        "leads": ["Golda Velez", "Agnes Koinange", "Phil Long"],
+        "cohort": "Beta",
+        "link": "https://github.com/decentralized-identity/labs-linkedclaims",
+        "tags":["LinkedClaims", "Decentralized Identifiers", "Verifiable Credentials"],
+        "proposal": "https://github.com/decentralized-identity/labs/blob/main/proposals/linked_claims/001_proposal.md"
+    },
+    {
+        "title": "VerAnon",
+        "description": "Introduce a protocol for anonymous personhood verification using Semaphore, a zero-knowledge group membership protocol.",
+        "tags": ["Semaphore", "Zero-Knowledge Proofs", "Personhood Verification"],
+        "long_description": "VerAnon uses Semaphore to enable unique and anonymous verification of personhood. Managers verify user identity documents, adding their Semaphore identity commitments to a group. Subjects then generate zero-knowledge proofs to show membership without revealing their actual identities. This approach helps prevent large-scale bot account creation and enhances privacy across various service providers, all while preserving unique personhood claims.",
+        "timeline": "November 20, 2024 - January 31, 2025",
+        "leads": ["Alex Hache"],
+        "cohort": "Beta",
+        "link": "https://github.com/decentralized-identity/labs-veranon",
+        "proposal": "https://github.com/decentralized-identity/labs/blob/main/proposals/veranon/veranon_proposal.md"
+    }
+]
