@@ -23,22 +23,10 @@ jobs:
         with:
           hugo-version: 'latest'
 
-      # Install Node.js (Optional, if themes require npm dependencies)
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '22'
-
-      # Install dependencies (Optional, if your Hugo site uses npm packages)
-      - name: Install npm dependencies
-        run: |
-          cd labs/website
-          npm install
-
       # Build the Hugo website
       - name: Build Hugo Website
         run: |
-          cd labs/website
+          cd website
           hugo -d public # Builds the site into the `public` directory
 
       # Deploy to GitHub Pages
@@ -46,4 +34,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: labs/website/public
+          publish_dir: website/public
