@@ -1,12 +1,12 @@
 name: Deploy Hugo Website to GitHub Pages
 
+
 on:
-  push:
-    branches:
-      - main # Adjust to your default branch name
   pull_request:
     branches:
       - main
+    types:
+      - closed
 
 jobs:
   build-deploy:
