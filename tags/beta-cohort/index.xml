@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Beta-Cohort on DIF Labs</title>
+    <link>http://localhost:1313/tags/beta-cohort/</link>
+    <description>Recent content in Beta-Cohort on DIF Labs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Jan 2025 04:05:05 -0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/beta-cohort/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DIF Labs: Show and Tell Event – February 18, 2025</title>
+      <link>http://localhost:1313/posts/beta_cohort_show_and_tell/</link>
+      <pubDate>Tue, 21 Jan 2025 04:05:05 -0800</pubDate>
+      <guid>http://localhost:1313/posts/beta_cohort_show_and_tell/</guid>
+      <description>Join us for the show and tell for the DIF Labs first cohort on Februrary 18</description>
+    </item>
+    <item>
+      <title>DIF Labs: Decentralized Identity Innovation Group</title>
+      <link>http://localhost:1313/posts/launch_post/</link>
+      <pubDate>Tue, 10 Dec 2024 05:30:05 -0800</pubDate>
+      <guid>http://localhost:1313/posts/launch_post/</guid>
+      <description>DIF Labs accelerates Decentralized Identity market innovation</description>
+    </item>
+  </channel>
+</rss>
