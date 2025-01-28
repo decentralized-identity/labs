@@ -24,9 +24,7 @@ collaborate, experiment, and grow.
 
 ## Why DIF Labs?
 
-<img
-src="https://raw.githubusercontent.com/decentralized-identity/labs/refs/heads/main/docs/blogposts/announcing_incubation_labs/Labs.png"
-alt="DIF Labs" style="width: 700px;">
+![https://raw.githubusercontent.com/decentralized-identity/labs/refs/heads/main/docs/blogposts/announcing_incubation_labs/Labs.png](https://raw.githubusercontent.com/decentralized-identity/labs/refs/heads/main/docs/blogposts/announcing_incubation_labs/Labs.png)
 
 DIF Labs was born from the need for a dedicated space where creators in decentralized identity can focus on practical
 innovation. Traditional standards organizations can be slow and formal, while incubators may lack the technical

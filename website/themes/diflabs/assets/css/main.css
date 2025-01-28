@@ -253,3 +253,29 @@ button.hamburger span {
         display: flex;
     }
 }
+
+img {
+    max-width: 100%;
+}
+
+pre {
+    max-width: 100%;
+    overflow-x: auto;
+    overflow: scroll; /* Enables scrolling */
+    margin: 0;
+
+}
+
+
+table {
+
+   td {
+     border: green solid 2px;
+     margin: 2px;
+   }
+
+   th {
+     border: green solid 2px;
+   }
+}
+
