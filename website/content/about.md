@@ -4,20 +4,21 @@ draft = false
 title = 'About'
 +++
 
-# Incubation Labs Charter
+# DIF Labs Charter
 
 ## Status
 
 |        |                                                                              |
 |--------|------------------------------------------------------------------------------|
-| Name   | Incubation Labs                                                              |
-| Initial Chairs | Andor Kesselman, Ankur Banerjee                                      |
-| Status | APPROVED                                                                     |
-| Repo   | [https://github.com/decentralized-identity/incubation-labs](https://github.com/decentralized-identity/labs) |
+| Name   | DIF Labs                                                              |
+| Initial Chairs | Andor Kesselman, Ankur Banerjee, 
+Daniel Thompson-Yvetot                                      |
+| Status | ACCEPTED                                                                     |
+| Repo   | [https://github.com/decentralized-identity/labs](https://github.com/decentralized-identity/labs) |
 
 ## Scope
 
-The Incubation Labs Working Group (ILWG) serves as an incubation
+The DIF Labs Working Group serves as an incubation
 environment for decentralized identity-based user applications and spec
 implementations. The WG provides an IP-safe environment for general
 implementation-related discussion, and allows participants to propose and
