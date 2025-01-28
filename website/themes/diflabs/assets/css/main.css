@@ -213,8 +213,8 @@ a {
 }
 
 a:visited {
-    color: #FFCC00; /* Change visited link color to yellow */
-    border-bottom: 2px dashed #FFCC00; /* Change underline color for visited links */
+    color: #ADD8E6; /* Change visited link color to yellow */
+    border-bottom: 2px dashed #ADD8E6; /* Change underline color for visited links */
 }
 
 a:hover {
