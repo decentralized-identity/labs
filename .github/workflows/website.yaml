@@ -1,32 +1,32 @@
 name: Deploy Hugo Website to GitHub Pages
 
-
 on:
-  branches:
-    - main
+  push:
+    branches:
+      - main
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout the repository
+      # 1. Check out the repository
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      # Set up Hugo
+      # 2. Set up Hugo
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
 
-      # Build the Hugo website
+      # 3. Build the Hugo website
       - name: Build Hugo Website
         run: |
           cd website
-          hugo -d public # Builds the site into the `public` directory
+          hugo -d public  # Builds the site into `website/public`
 
-      # Deploy to GitHub Pages
+      # 4. Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
