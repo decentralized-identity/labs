@@ -210,13 +210,8 @@ a {
     text-decoration: none;
 }
 
-a:visited {
-    color: #00BF00; /* Change visited link color to yellow */
-}
-
 a:hover {
-    color: #FFCC00; /* Change hover color to yellow */
-    border-bottom: 2px dashed #FFCC00; /* Change underline color on hover */
+    color: #66FF66;; /* Change hover color to yellow */
 }
 
 nav a:hover {
