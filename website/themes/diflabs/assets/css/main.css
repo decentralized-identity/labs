@@ -147,14 +147,6 @@ footer {
     margin-top: 40px;
 }
 
-.terminal-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000; /* Optional: Set a background color */
-    margin: 0; /* Remove any default margins */
-}
-
 .logo a {
     color: #66FF66;
     text-decoration: none;
