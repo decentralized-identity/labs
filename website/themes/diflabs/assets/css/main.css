@@ -57,7 +57,6 @@ nav a:hover {
     text-align: center;
     padding: 60px 20px;
     margin: 20px 0;
-    border: 1px dashed #00FF00;
 }
 
 .container {
@@ -209,12 +208,10 @@ footer {
 a {
     color: #66FF66; /* Change link color to light green */
     text-decoration: none;
-    border-bottom: 2px dashed #66FF66; /* Add dashed underline */
 }
 
 a:visited {
-    color: #ADD8E6; /* Change visited link color to yellow */
-    border-bottom: 2px dashed #ADD8E6; /* Change underline color for visited links */
+    color: #00BF00; /* Change visited link color to yellow */
 }
 
 a:hover {
