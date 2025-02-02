@@ -148,14 +148,6 @@ footer {
     margin-top: 40px;
 }
 
-.terminal-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000; /* Optional: Set a background color */
-    margin: 0; /* Remove any default margins */
-}
-
 .logo a {
     color: #66FF66;
     text-decoration: none;
@@ -214,12 +206,12 @@ a {
 
 a:visited {
     color: #ADD8E6; /* Change visited link color to yellow */
-    border-bottom: 2px dashed #ADD8E6; /* Change underline color for visited links */
+    border-bottom: 2px dashed #4F7942; /* Change underline color for visited links */
 }
 
 a:hover {
     color: #FFCC00; /* Change hover color to yellow */
-    border-bottom: 2px dashed #FFCC00; /* Change underline color on hover */
+    border-bottom: 2px dashed #98FB98; /* Change underline color on hover */
 }
 
 nav a:hover {
