@@ -4,12 +4,15 @@ draft = false
 title = 'DIF Labs: Show and Tell Event – February 18, 2025'
 summary = 'Join us for the show and tell for the DIF Labs first cohort on February 18'
 tags = ["show and tell", "beta-cohort"]
+banner = "/imgs/matrix_01.jpg"
+toc = false
 +++
 
-## Event Details
+## Details 
+
 - **Date**: February 18, 2025  
 - **Time**: 11:00 AM ET  
-- **Meeting Link**: [Join the Event on Zoom](https://zoom.us/j/1234567890)
+- **[Click To Listen In!](https://www.eventbrite.com/e/1235049027889?aff=oddtdtcreator)**
 
 ---
 
@@ -23,7 +26,7 @@ The **DIF Labs Show and Tell** is the culmination of this journey—a chance to 
 progress made during the cohort. This is your opportunity to see these projects in action, engage with their creators,
 and contribute to the vibrant ecosystem of decentralized identity.
 
-Please join us on Februrary 18 to hear from these projects and learn more about what they've accomplished.
+Please join us on **[Februrary 18]((https://www.eventbrite.com/e/1235049027889?aff=oddtdtcreator))** to hear from these projects and learn more about what they've accomplished.
 
 ---
 
@@ -43,13 +46,15 @@ Please join us on Februrary 18 to hear from these projects and learn more about 
 - **Engage with Builders**: Learn directly from the project leads and provide valuable feedback.  
 - **Connect**: Network with industry leaders and innovators driving the future of identity.  
 
----
 
-## Signup for the Next Round or More Information
+<h2 class="pulse">
+ Signup for the Next Round or More Information
+</h2>
 
 As the Beta program concludes, DIF Labs is gearing up for its next cohort. If you’re a builder, startup, or innovator
 passionate about decentralized identity, now is the time to get involved.
 
+- **[Click To Listen In!](https://www.eventbrite.com/e/1235049027889?aff=oddtdtcreator)**
 - **Signup for the Next Cohort**: [Apply Here](https://forms.gle/c8gyHmqm14UPRGrd6)  
 - **Learn More About DIF Labs**: [Explore Here](https://identity.foundation/labs)  
 - **Join DIF Labs Discord**: [Join Here](https://discord.gg/972yqVmD)  

@@ -3,6 +3,72 @@
     body {
       font-family: 'Arial', sans-serif;
       line-height: 1.6;
+      margin: 0; /* remove default margin */
+    }
+
+    /* Progress track container -- always visible */
+    #progress-track {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 30px;  /* thicker track */
+      background: #141414; /* dark gray track */
+      z-index: 1000;
+    }
+
+    /* A duration element to show total reading time at the top */
+    #duration {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      font-size: 1rem;
+      color: #00ff00;
+      line-height: 30px;
+    }
+
+    /* The slider handle that indicates current progress.
+       It will display the remaining time inside it. */
+    #slider {
+      position: absolute;
+      width: 50px;
+      height: 30px;
+      background: #00ff00;  /* green slider */
+      border-radius: 5px;
+      box-shadow: 0 0 4px rgba(0,0,0,0.3);
+      display: none; /* hidden at the very top */
+      text-align: center;
+      line-height: 30px;
+      color: #141414;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+
+    /* Passed time indicator (right side) */
+    #time-right {
+      position: fixed;
+      right: 10px;
+      top: 0;
+      font-size: 1rem;
+      color: #00ff00;
+      line-height: 30px;
+      z-index: 1001;
+      display: none;
+    }
+
+    /* Banner styles */
+    .banner {
+      width: 100%; /* full width relative to the content wrapper */
+      height: 300px; /* visible container height */
+      background-attachment: fixed; /* parallax effect */
+      background-position: center;
+      background-repeat: no-repeat;
+      /* Ensure the background image is larger than container for parallax */
+      background-size: auto 500px;
+      margin-bottom: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     .content-wrapper {
@@ -10,7 +76,7 @@
       margin: 2rem auto;
       padding: 1.5rem;
       border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     h1 {
@@ -37,7 +103,7 @@
 
     .tags span {
       display: inline-block;
-      background: #007BFF; /* Primary blue for tags */
+      background: #007BFF;
       color: #00ff00;
       font-size: 0.9rem;
       padding: 0.3rem 0.6rem;
@@ -47,11 +113,35 @@
     }
 
     .tags span:hover {
-      background: #0056b3; /* Slightly darker blue on hover */
+      background: #0056b3;
+    }
+
+    /* Pulse class for call-to-action text */
+    .pulse {
+      animation: pulse 4s infinite;
+    }
+    @keyframes pulse {
+      0% { opacity: 1; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.05); }
+      100% { opacity: 1; transform: scale(1); }
     }
   </style>
 
+  <!-- Progress Indicator Elements -->
+  <div id="progress-track">
+    <!-- At the top (scrollTop==0), show the total duration here -->
+    <div id="duration"></div>
+    <!-- The slider will slide along the track (only when scrolling) -->
+    <div id="slider"></div>
+  </div>
+  <!-- Passed time indicator appears on the right of the track when scrolling -->
+  <div id="time-right"></div>
+
+  <!-- Main content -->
   <div class="content-wrapper">
+    {{ with .Params.banner }}
+      <div class="banner" style="background-image: url('{{ . }}');"></div>
+    {{ end }}
 
     <h1>{{ .Title }}</h1>
 
@@ -59,7 +149,9 @@
     {{ $dateHuman := .Date | time.Format ":date_long" }}
     <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
 
-    <div class="toc">{{ .TableOfContents }}</div>
+    {{ with .Params.toc }} 
+      <div class="toc">{{ .TableOfContents }}</div>
+    {{ end }}
 
     <div class="content">
       {{ .Content }}
@@ -69,4 +161,69 @@
       {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
     </div>
   </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const progressTrack = document.getElementById('progress-track');
+      const slider = document.getElementById('slider');
+      const durationElem = document.getElementById('duration');
+      const timeRightElem = document.getElementById('time-right');
+      const contentElem = document.querySelector('.content');
+      
+      // Calculate estimated total reading time in seconds (assuming 200 wpm)
+      let totalWords = 0;
+      if (contentElem) {
+        totalWords = contentElem.innerText.trim().split(/\s+/).length;
+      }
+      const totalReadingTime = (totalWords / 200) * 60;  // seconds
+      
+      // Format seconds as "Xm Ys"
+      function formatTime(sec) {
+        sec = Math.max(0, sec);
+        const minutes = Math.floor(sec / 60);
+        const seconds = Math.floor(sec % 60);
+        return minutes + "m " + seconds + "s";
+      }
+      
+      // At page load (scrollTop == 0), show the full duration in the center of the track
+      durationElem.innerText = "Duration: " + formatTime(totalReadingTime);
+      
+      function updateProgress() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const scrollFraction = (docHeight > 0) ? scrollTop / docHeight : 0;
+        const trackWidth = progressTrack.offsetWidth;
+        
+        if (scrollTop === 0) {
+          // At the very top: show the duration element; hide the slider and passed time
+          slider.style.display = "none";
+          durationElem.style.display = "block";
+          timeRightElem.style.display = "none";
+        } else {
+          // When scrolling: hide the central duration, show the slider and passed time
+          durationElem.style.display = "none";
+          slider.style.display = "block";
+          timeRightElem.style.display = "block";
+          
+          // Position the slider along the track
+          // (subtract half the slider width so its center aligns with the progress)
+          const sliderLeft = scrollFraction * trackWidth - slider.offsetWidth / 2;
+          slider.style.left = sliderLeft + "px";
+          
+          // Calculate the remaining and passed reading times
+          const timePassed = totalReadingTime * scrollFraction;
+          const timeRemaining = totalReadingTime - timePassed;
+          
+          // Set the slider’s text to show the remaining time (centered inside it)
+          slider.innerText = formatTime(timeRemaining);
+          // Set the passed time on the right
+          timeRightElem.innerText = "Passed: " + formatTime(timePassed);
+        }
+      }
+      
+      window.addEventListener('scroll', updateProgress);
+      window.addEventListener('resize', updateProgress);
+      updateProgress();
+    });
+  </script>
 {{ end }}
