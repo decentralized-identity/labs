@@ -200,18 +200,6 @@ footer {
 a {
     color: #66FF66; /* Change link color to light green */
     text-decoration: none;
-<<<<<<< HEAD
-}
-
-a:hover {
-    color: #66FF66;; /* Change hover color to yellow */
-    border-bottom: 2px dashed #66FF66; /* Add dashed underline */
-}
-
-a:visited {
-    color: #FFB000; /* Change visited link color to yellow */
-    border-bottom: 2px dashed #FFB000; /* Change underline color for visited links */
-=======
 }
 
 a:visited {
@@ -222,7 +210,10 @@ a:visited {
 a:hover {
     color: #FFCC00; /* Change hover color to yellow */
     border-bottom: 2px dashed #98FB98; /* Change underline color on hover */
->>>>>>> ac72683 (fixed css dashed for visited links)
+}
+
+a:hover {
+    color: #66FF66;; /* Change hover color to yellow */
 }
 
 nav a:hover {
