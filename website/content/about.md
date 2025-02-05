@@ -11,9 +11,8 @@ title = 'About'
 |        |                                                                              |
 |--------|------------------------------------------------------------------------------|
 | Name   | DIF Labs                                                              |
-| Initial Chairs | Andor Kesselman, Ankur Banerjee, 
-Daniel Thompson-Yvetot                                      |
-| Status | ACCEPTED                                                                     |
+| Initial Chairs | Andor Kesselman, Ankur Banerjee, Daniel Thompson-Yvetot       |
+| Status | ACCEPTED                                                              |
 | Repo   | [https://github.com/decentralized-identity/labs](https://github.com/decentralized-identity/labs) |
 
 ## Scope
