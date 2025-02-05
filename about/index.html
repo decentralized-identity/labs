@@ -6,7 +6,7 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <title>About | DIF Labs</title>
 
-      <link rel="stylesheet" href="/css/main.min.1f16fcc411c99a6fd13cf63efb4e37c5adef420438a164f3b44e52522f0be56f.css" integrity="sha256-Hxb8xBHJmm/RPPY&#43;&#43;043xa3vQgQ4oWTztE5SUi8L5W8=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/main.min.01dcd0825b4335f836fdf63ea2f97d23ef25cb41159ab057ee8cd976784c3d3e.css" integrity="sha256-AdzQgltDNfg2/fY&#43;ovl9I&#43;8ly0EVmrBX7ozZdnhMPT4=" crossorigin="anonymous">
 
 
 
@@ -60,12 +60,78 @@
       line-height: 1.6;
     }
 
+     
+    #progress-track {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 30px;   
+      background: #141414;  
+      margin-left: 5px;  
+      margin-right: 5px;  
+      z-index: 1000;
+    }
+
+     
+    #duration {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      font-size: 1rem;
+      color: #00ff00;
+      line-height: 30px;
+    }
+
+     
+    #slider {
+      position: absolute;
+      width: 50px;
+      height: 30px;
+      background: #00ff00;   
+      border-radius: 5px;
+      box-shadow: 0 0 4px rgba(0,0,0,0.3);
+      display: none;  
+      text-align: center;
+      line-height: 30px;
+      color: #141414;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+
+     
+    #time-right {
+      position: fixed;
+      right: 10px;
+      top: 0;
+      font-size: 1rem;
+      color: #00ff00;
+      line-height: 30px;
+      z-index: 1001;
+      display: none;
+    }
+
+     
+    .banner {
+      width: 100%;  
+      height: 300px;  
+      background-attachment: fixed;  
+      background-position: center;
+      background-repeat: no-repeat;
+       
+      background-size: 100% 800px;
+      margin-bottom: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
     .content-wrapper {
       max-width: 800px;
       margin: 2rem auto;
       padding: 1.5rem;
       border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     h1 {
@@ -92,7 +158,7 @@
 
     .tags span {
       display: inline-block;
-      background: #007BFF;  
+      background: #007BFF;
       color: #00ff00;
       font-size: 0.9rem;
       padding: 0.3rem 0.6rem;
@@ -102,11 +168,33 @@
     }
 
     .tags span:hover {
-      background: #0056b3;  
+      background: #0056b3;
+    }
+
+     
+    .pulse {
+      animation: pulse 4s infinite;
+    }
+    @keyframes pulse {
+      0% { opacity: 1; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.05); }
+      100% { opacity: 1; transform: scale(1); }
     }
   </style>
 
+  
+  <div id="progress-track">
+    
+    <div id="duration"></div>
+    
+    <div id="slider"></div>
+  </div>
+  
+  <div id="time-right"></div>
+
+  
   <div class="content-wrapper">
+    
 
     <h1>About</h1>
 
@@ -114,18 +202,7 @@
     
     <time datetime="2025-01-18T08:25:22-08:00">January 18, 2025</time>
 
-    <div class="toc"><nav id="TableOfContents">
-  <ul>
-    <li><a href="#status">Status</a></li>
-    <li><a href="#scope">Scope</a></li>
-    <li><a href="#deliverables">Deliverables</a></li>
-    <li><a href="#operating-procedure">Operating Procedure</a></li>
-    <li><a href="#member-participation">Member participation</a></li>
-    <li><a href="#intended-audience">Intended Audience</a></li>
-    <li><a href="#caveats">Caveats</a></li>
-    <li><a href="#additional-resources">Additional Resources:</a></li>
-  </ul>
-</nav></div>
+    
 
     <div class="content">
       <h1 id="dif-labs-charter">DIF Labs Charter</h1>
@@ -214,6 +291,71 @@ co-chairs.</li>
 
     </div>
   </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const progressTrack = document.getElementById('progress-track');
+      const slider = document.getElementById('slider');
+      const durationElem = document.getElementById('duration');
+      const timeRightElem = document.getElementById('time-right');
+      const contentElem = document.querySelector('.content');
+      
+      
+      let totalWords = 0;
+      if (contentElem) {
+        totalWords = contentElem.innerText.trim().split(/\s+/).length;
+      }
+      const totalReadingTime = (totalWords / 200) * 60;  
+      
+      
+      function formatTime(sec) {
+        sec = Math.max(0, sec);
+        const minutes = Math.floor(sec / 60);
+        const seconds = Math.floor(sec % 60);
+        return minutes + "m " + seconds + "s";
+      }
+      
+      
+      durationElem.innerText = "Duration: " + formatTime(totalReadingTime);
+      
+      function updateProgress() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const scrollFraction = (docHeight > 0) ? scrollTop / docHeight : 0;
+        const trackWidth = progressTrack.offsetWidth;
+        
+        if (scrollTop === 0) {
+          
+          slider.style.display = "none";
+          durationElem.style.display = "block";
+          timeRightElem.style.display = "none";
+        } else {
+          
+          durationElem.style.display = "none";
+          slider.style.display = "block";
+          timeRightElem.style.display = "block";
+          
+          
+          
+          const sliderLeft = scrollFraction * trackWidth - slider.offsetWidth / 2;
+          slider.style.left = sliderLeft + "px";
+          
+          
+          const timePassed = totalReadingTime * scrollFraction;
+          const timeRemaining = totalReadingTime - timePassed;
+          
+          
+          slider.innerText = formatTime(timeRemaining);
+          
+          timeRightElem.innerText = "Passed: " + formatTime(timePassed);
+        }
+      }
+      
+      window.addEventListener('scroll', updateProgress);
+      window.addEventListener('resize', updateProgress);
+      updateProgress();
+    });
+  </script>
 
   </main>
   <footer>
