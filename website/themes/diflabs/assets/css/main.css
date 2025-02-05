@@ -204,6 +204,12 @@ a {
 
 a:hover {
     color: #66FF66;; /* Change hover color to yellow */
+    border-bottom: 2px dashed #66FF66; /* Add dashed underline */
+}
+
+a:visited {
+    color: #FFB000; /* Change visited link color to yellow */
+    border-bottom: 2px dashed #FFB000; /* Change underline color for visited links */
 }
 
 nav a:hover {
