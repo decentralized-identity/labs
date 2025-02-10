@@ -13,6 +13,8 @@
 - Start Date: <date>
 - URI: <uri>
 
+> **_NOTE:_**  during the incubation period, BTCO VC was renamed to [Ordinals Plus](https://ordinals.plus).
+
 ## Summary
 
 This proposal outlines a framework for implementing verifiable credentials on Bitcoin using Ordinal inscriptions. The framework builds on the `did:btco` method, which associates DIDs with specific ordinals and implements DID Linked Resources, enabling tamper-proof and decentralized verification of digital artifacts without intermediaries. The inherent content-addressing nature of Ordinal inscriptions makes them particularly well-suited for implementing DID Linked Resources. The project aims to standardize these capabilities for various use cases including event tickets, digital collectibles, ownership records, and Verifiable AI Inference (VAI) credentials that prove the authenticity and origin of AI-generated content.
