@@ -1,6 +1,6 @@
 [
     {
-        "title": "Bitcoin Ordinals Verifiable Credentials Framework",
+        "title": "Ordinals Plus",
         "description": "Establish a standardized framework for implementing verifiable credentials on Bitcoin using Ordinal inscriptions.",
         "long_description": "This proposal outlines a framework built on the did:btco method, associating DIDs with specific ordinals for tamper-proof digital artifacts. By leveraging Bitcoin’s security and decentralization, it aims to enable on-chain verifiable credentials for use cases such as event tickets, ownership records, and AI-generated content. Emphasis is on privacy, scalability, and seamless integration with existing W3C VC and DID standards.",
         "timeline": "November 28, 2024 - January 31, 2025",
