@@ -34,7 +34,7 @@ Please join us on **[Februrary 18]((https://www.eventbrite.com/e/1235049027889?a
 
 | **Project Name**                                  | **Description**                                                                           | **Leads**                              | **Link**                                                                         |
 |---------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------|----------------------------------------------------------------------------------|
-| Bitcoin Ordinals Verifiable Credentials Framework | Framework for implementing verifiable credentials on Bitcoin using Ordinal inscriptions.  | Brian Richter                          | [GitHub Repository](https://github.com/decentralized-identity/labs-btco-vc)      |
+| Ordinals Plus  | Framework for implementing verifiable credentials on Bitcoin using Ordinal inscriptions.  | Brian Richter                          | [GitHub Repository](https://github.com/decentralized-identity/labs-ordinals-plus)      |
 | Linked Claims                                     | Combines attestations to build progressive trust.                                         | Golda Velez, Agnes Koinange, Phil Long | [GitHub Repository](https://github.com/decentralized-identity/labs-linkedclaims) |
 | VerAnon                                           | Protocol for anonymous personhood verification using Semaphore and zero-knowledge proofs. | Alex Hache                             | [GitHub Repository](https://github.com/decentralized-identity/labs-veranon)      |
 
