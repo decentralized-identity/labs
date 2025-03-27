@@ -1,0 +1,6 @@
+{{ $image := .Page.Resources.Get (.Get "src") }}
+{{ if $image }}
+    <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}"  alt="{{ .Get "alt" }}">
+{{ else }}
+    <p>Image not found: {{ .Get "src" }}</p>
+{{ end }}
