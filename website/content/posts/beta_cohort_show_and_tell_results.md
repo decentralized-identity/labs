@@ -2,7 +2,7 @@
 date = '2025-03-26T23:21:59-07:00'
 draft = false
 banner = "/imgs/matrix_01.jpg"
-title = 'DIF Labs Beta Cohort Show & Tell'
+title = 'DIF Labs Beta Cohort Show & Tell Conclusion'
 summary = '3 Projects of the DIF Labs Beta Cohort Results'
 tags = ["show and tell", "beta-cohort"]
 toc = false
