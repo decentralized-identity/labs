@@ -1,6 +1,6 @@
 +++
 date = '2025-03-26T23:21:59-07:00'
-draft = true
+draft = false
 banner = "/imgs/matrix_01.jpg"
 title = 'DIF Labs Beta Cohort Show & Tell'
 summary = '3 Projects of the DIF Labs Beta Cohort Results'
