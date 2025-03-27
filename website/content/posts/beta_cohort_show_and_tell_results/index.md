@@ -14,6 +14,8 @@ DIF Labs is committed to advancing impactful, real-world projects that are resha
 
 As DIF Labs Co-Chair Daniel Thompson-Yvetot eloquently noted during the event, "It's rare today to see a community of real humans coming together and thinking about stuff together... As progress marches forward, the work we're seeing here in Labs today finds ways for us as humans to respect our humanity and enjoy that humanity."
 
+{{< image src="show_and_tell_beta_cohort.png" alt="Show and Tell Beta Cohort" >}}
+
 ## **3 Innovative Projects Pushing The Boundaries Of Decentralized Identity** 
 
 ### **Veranon: Proving Personhood While Preserving Privacy**
