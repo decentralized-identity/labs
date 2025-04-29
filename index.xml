@@ -1,61 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Home on DIF Labs</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content in Home on DIF Labs</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 28 Apr 2025 21:06:00 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Request For Proposals -- Beta Cohort 2</title>
-      <link>http://localhost:1313/posts/042825_request_for_proposals/</link>
-      <pubDate>Mon, 28 Apr 2025 21:06:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/042825_request_for_proposals/</guid>
-      <description>DIF Labs is seeking proposals for Beta Cohort 2 focused on decentralized identity, cryptography, authenticity, and verifiable AI</description>
-    </item>
-    <item>
-      <title>🧠 DIF Labs at IIW: Brainstorming Tracks for the Next Cohort</title>
-      <link>http://localhost:1313/posts/iiw_01/</link>
-      <pubDate>Sun, 06 Apr 2025 20:55:50 -0700</pubDate>
-      <guid>http://localhost:1313/posts/iiw_01/</guid>
-      <description>DIF Labs at IIW. Talk to us</description>
-    </item>
-    <item>
-      <title>DIF Labs Beta Cohort Show &amp; Tell Conclusion</title>
-      <link>http://localhost:1313/posts/beta_cohort_show_and_tell_results/</link>
-      <pubDate>Wed, 26 Mar 2025 23:21:59 -0700</pubDate>
-      <guid>http://localhost:1313/posts/beta_cohort_show_and_tell_results/</guid>
-      <description>3 Projects of the DIF Labs Beta Cohort Results</description>
-    </item>
-    <item>
-      <title>DIF Labs: Show and Tell – 02/18/2025</title>
-      <link>http://localhost:1313/posts/beta_cohort_show_and_tell/</link>
-      <pubDate>Tue, 21 Jan 2025 04:05:05 -0800</pubDate>
-      <guid>http://localhost:1313/posts/beta_cohort_show_and_tell/</guid>
-      <description>3 Projects of the DIF Labs Beta Cohort Showcase Their Work For The Last 3 Months</description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Sat, 18 Jan 2025 08:25:22 -0800</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description>&lt;h1 id=&#34;dif-labs-charter&#34;&gt;DIF Labs Charter&lt;/h1&gt;&#xA;&lt;h2 id=&#34;status&#34;&gt;Status&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;&lt;/th&gt;&#xA;          &lt;th&gt;&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Name&lt;/td&gt;&#xA;          &lt;td&gt;DIF Labs&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Initial Chairs&lt;/td&gt;&#xA;          &lt;td&gt;Andor Kesselman, Ankur Banerjee, Daniel Thompson-Yvetot&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Status&lt;/td&gt;&#xA;          &lt;td&gt;ACCEPTED&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Repo&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://github.com/decentralized-identity/labs&#34;&gt;https://github.com/decentralized-identity/labs&lt;/a&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;scope&#34;&gt;Scope&lt;/h2&gt;&#xA;&lt;p&gt;The DIF Labs Working Group serves as an incubation&#xA;environment for decentralized identity-based user applications and spec&#xA;implementations. The WG provides an IP-safe environment for general&#xA;implementation-related discussion, and allows participants to propose and&#xA;participate in WG Work Items, each of which is focused on a user application&#xA;and/or spec implementation.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>DIF Labs: Decentralized Identity Innovation Group</title>
-      <link>http://localhost:1313/posts/launch_post/</link>
-      <pubDate>Tue, 10 Dec 2024 05:30:05 -0800</pubDate>
-      <guid>http://localhost:1313/posts/launch_post/</guid>
-      <description>DIF Labs accelerates Decentralized Identity market innovation</description>
-    </item>
-    <item>
-      <title>Main Directory</title>
-      <link>http://localhost:1313/directory/</link>
-      <pubDate>Sun, 15 Jan 2023 09:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/directory/</guid>
-      <description></description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on DIF Labs</title><link>http://localhost:1313/</link><description>Recent content in Home on DIF Labs</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 28 Apr 2025 21:06:00 -0700</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>Request For Proposals -- Beta Cohort 2</title><link>http://localhost:1313/posts/042825_request_for_proposals/</link><pubDate>Mon, 28 Apr 2025 21:06:00 -0700</pubDate><guid>http://localhost:1313/posts/042825_request_for_proposals/</guid><description>DIF Labs is seeking proposals for Beta Cohort 2 focused on decentralized identity, cryptography, authenticity, and verifiable AI</description></item><item><title>🧠 DIF Labs at IIW: Brainstorming Tracks for the Next Cohort</title><link>http://localhost:1313/posts/iiw_01/</link><pubDate>Sun, 06 Apr 2025 20:55:50 -0700</pubDate><guid>http://localhost:1313/posts/iiw_01/</guid><description>DIF Labs at IIW. Talk to us</description></item><item><title>DIF Labs Beta Cohort Show &amp; Tell Conclusion</title><link>http://localhost:1313/posts/beta_cohort_show_and_tell_results/</link><pubDate>Wed, 26 Mar 2025 23:21:59 -0700</pubDate><guid>http://localhost:1313/posts/beta_cohort_show_and_tell_results/</guid><description>3 Projects of the DIF Labs Beta Cohort Results</description></item><item><title>DIF Labs: Show and Tell – 02/18/2025</title><link>http://localhost:1313/posts/beta_cohort_show_and_tell/</link><pubDate>Tue, 21 Jan 2025 04:05:05 -0800</pubDate><guid>http://localhost:1313/posts/beta_cohort_show_and_tell/</guid><description>3 Projects of the DIF Labs Beta Cohort Showcase Their Work For The Last 3 Months</description></item><item><title>About</title><link>http://localhost:1313/about/</link><pubDate>Sat, 18 Jan 2025 08:25:22 -0800</pubDate><guid>http://localhost:1313/about/</guid><description>&lt;h1 id="dif-labs-charter">DIF Labs Charter&lt;/h1>
+&lt;h2 id="status">Status&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>&lt;/th>
+ &lt;th>&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Name&lt;/td>
+ &lt;td>DIF Labs&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Initial Chairs&lt;/td>
+ &lt;td>Andor Kesselman, Ankur Banerjee, Daniel Thompson-Yvetot&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Status&lt;/td>
+ &lt;td>ACCEPTED&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Repo&lt;/td>
+ &lt;td>&lt;a href="https://github.com/decentralized-identity/labs">https://github.com/decentralized-identity/labs&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="scope">Scope&lt;/h2>
+&lt;p>The DIF Labs Working Group serves as an incubation
+environment for decentralized identity-based user applications and spec
+implementations. The WG provides an IP-safe environment for general
+implementation-related discussion, and allows participants to propose and
+participate in WG Work Items, each of which is focused on a user application
+and/or spec implementation.&lt;/p></description></item><item><title>DIF Labs: Decentralized Identity Innovation Group</title><link>http://localhost:1313/posts/launch_post/</link><pubDate>Tue, 10 Dec 2024 05:30:05 -0800</pubDate><guid>http://localhost:1313/posts/launch_post/</guid><description>DIF Labs accelerates Decentralized Identity market innovation</description></item><item><title>Main Directory</title><link>http://localhost:1313/directory/</link><pubDate>Sun, 15 Jan 2023 09:00:00 -0700</pubDate><guid>http://localhost:1313/directory/</guid><description/></item></channel></rss>
