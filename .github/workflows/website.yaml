@@ -18,13 +18,12 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest'
+          hugo-version: '0.141.0'
 
       # 3. Build the Hugo website
       - name: Build Hugo Website
-        run: |
-          cd website
-          hugo -d public  # Builds the site into `website/public`
+        run: hugo --minify
+        working-directory: website
 
       # 4. Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
