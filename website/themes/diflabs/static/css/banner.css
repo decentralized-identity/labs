@@ -12,27 +12,36 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    border: 2px solid #00ff00;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.banner-content:hover {
+    background-color: rgba(0, 255, 0, 0.1);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .latest-text {
     color: #00ff00;
     font-size: 0.9rem;
-    font-weight: 500;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    padding-top: 0.25rem;
 }
 
-.latest-post-banner a {
-    color: #333;
-    text-decoration: none;
+.post-title {
+    color: #00ff00;
     font-weight: 500;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
 }
 
-.latest-post-banner a:hover {
-    color: #007bff;
+.banner-content:hover .post-title {
+    color: #00ff00;
 }
 
 @keyframes pulse {
@@ -51,7 +60,7 @@
 }
 
 .new-badge {
-    background-color: #28a745;
+    background-color: #00ff00;
     color: white;
     padding: 0.25rem 0.5rem;
     border-radius: 3px;

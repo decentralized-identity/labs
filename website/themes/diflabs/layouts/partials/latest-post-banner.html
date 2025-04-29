@@ -1,13 +1,11 @@
 {{ $latestPost := index (where .Site.RegularPages "Section" "posts") 0 }}
 {{ if $latestPost }}
 <div class="latest-post-banner">
-    <div class="banner-content">
+    <a href="{{ $latestPost.RelPermalink }}" class="banner-content">
         <span class="latest-text">Latest Post</span>
         <span class="new-badge">NEW</span>
-        <a href="{{ $latestPost.RelPermalink }}">
-            {{ $latestPost.Title }}
-            <span class="banner-date">{{ $latestPost.Date.Format "Jan 2, 2006" }}</span>
-        </a>
-    </div>
+        <span class="post-title">{{ $latestPost.Title }}</span>
+        <span class="banner-date">{{ $latestPost.Date.Format "Jan 2, 2006" }}</span>
+    </a>
 </div>
 {{ end }} 
