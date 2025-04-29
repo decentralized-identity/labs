@@ -65,8 +65,8 @@ Submissions should be no more than 2–3 pages in PDF or Markdown format.
 
 ## Submission Details
 
-- **Deadline**: [Insert Date Here]
-- **Submit To**: [Insert Submission Email or Portal]
+- **Deadline**: May 20, 2025
+- **Submit To**: labs@identity.foundation
 
 > Shortlisted proposals may be invited to a short interview or project pitch.
 
