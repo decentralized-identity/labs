@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<title>DIF Labs: Decentralized Identity Innovation Group | DIF Labs</title>
+
+      <link rel="stylesheet" href="/css/main.min.01dcd0825b4335f836fdf63ea2f97d23ef25cb41159ab057ee8cd976784c3d3e.css" integrity="sha256-AdzQgltDNfg2/fY&#43;ovl9I&#43;8ly0EVmrBX7ozZdnhMPT4=" crossorigin="anonymous">
+
+
+
+      <script src="/js/main.29e8dc4b3aad74a9110c9111ffeb28321e9d28a02fc024baf87d2bc68a9457f6.js" integrity="sha256-KejcSzqtdKkRDJER/&#43;soMh6dKKAvwCS6&#43;H0rxoqUV/Y=" crossorigin="anonymous"></script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7YL35NNN05"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7YL35NNN05');
+</script>
+
+
+</head>
+<body>
+  <header>
+    <header>
+    <div class="logo">
+        <span class="material-icons logo-icon">science</span>
+        <a href="/"><h1>DIF Labs</h1></a>
+    </div>
+    <nav class="nav-links">
+        <a href="/about">About</a>
+        <a href="/posts">Posts</a>
+        <a href="/directory">Knowledge Pool</a>
+        <a href="https://discord.gg/xnDAFnBS" target="_blank" rel="noopener noreferrer" title="Join our Discord">
+            <img src="/imgs/discord-logo.svg" fill="#00ff00" alt="Discord" style="height: 24px;">
+        </a>
+        <a href="https://github.com/decentralized-identity/labs" target="_blank" rel="noopener noreferrer" title="Visit our GitHub">
+            <img src="/imgs/github-logo.svg" fill="#00ff00" alt="GitHub" style="height: 24px;">
+        </a>
+    </nav>
+    <button class="hamburger" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+
+</header>
+
+  </header>
+  <main>
+    
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+    }
+
+     
+    #progress-track {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 30px;   
+      background: #141414;  
+      margin-left: 5px;  
+      margin-right: 5px;  
+      z-index: 1000;
+    }
+
+     
+    #duration {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      font-size: 1rem;
+      color: #00ff00;
+      line-height: 30px;
+    }
+
+     
+    #slider {
+      position: absolute;
+      width: 50px;
+      height: 30px;
+      background: #00ff00;   
+      border-radius: 5px;
+      box-shadow: 0 0 4px rgba(0,0,0,0.3);
+      display: none;  
+      text-align: center;
+      line-height: 30px;
+      color: #141414;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+
+     
+    #time-right {
+      position: fixed;
+      right: 10px;
+      top: 0;
+      font-size: 1rem;
+      color: #00ff00;
+      line-height: 30px;
+      z-index: 1001;
+      display: none;
+    }
+
+     
+    .banner {
+      width: 100%;  
+      height: 300px;  
+      background-attachment: fixed;  
+      background-position: center;
+      background-repeat: no-repeat;
+       
+      background-size: 100% 800px;
+      margin-bottom: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .content-wrapper {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    time {
+      display: block;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    .content-wrapper p {
+      margin: 1rem 0;
+    }
+
+    .tags {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid #00ff00;
+    }
+
+    .tags span {
+      display: inline-block;
+      background: #007BFF;
+      color: #00ff00;
+      font-size: 0.9rem;
+      padding: 0.3rem 0.6rem;
+      margin: 0.2rem;
+      border-radius: 16px;
+      text-decoration: none;
+    }
+
+    .tags span:hover {
+      background: #0056b3;
+    }
+
+     
+    .pulse {
+      animation: pulse 4s infinite;
+    }
+    @keyframes pulse {
+      0% { opacity: 1; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.05); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+  </style>
+
+  
+  <div id="progress-track">
+    
+    <div id="duration"></div>
+    
+    <div id="slider"></div>
+  </div>
+  
+  <div id="time-right"></div>
+
+  
+  <div class="content-wrapper">
+    
+
+    <h1>DIF Labs: Decentralized Identity Innovation Group</h1>
+
+    
+    
+    <time datetime="2024-12-10T05:30:05-08:00">December 10, 2024</time>
+
+    
+
+    <div class="content">
+      <p>The original post for this is on the <a href="https://blog.identity.foundation/dif-labs-ssi-market-gets-an-innovation-hub-2/?ref=decentralized-identity-foundation-newsletter">DIF main website</a>. This is a migration.</p>
+<pre tabindex="0"><code>    ,------.  ,--.,------.    ,--.           ,--.
+    |  .-.  \ |  ||  .---&#39;    |  |    ,--,--.|  |-.  ,---.
+    |  |  \  :|  ||  `--,     |  |   &#39; ,-.  || .-. &#39;(  .-&#39;
+    |  &#39;--&#39;  /|  ||  |`       |  &#39;--.\ &#39;-&#39;  || `-&#39; |.-&#39;  `)
+    `-------&#39; `--&#39;`--&#39;        `-----&#39; `--`--&#39; `---&#39; `----&#39;
+</code></pre><h2 id="dif-labs-accelerates-decentralized-identity-market-innovation">DIF Labs accelerates Decentralized Identity market innovation</h2>
+<p>DIF’s commitment to supporting builders and doers in the decentralized identity space has led to the launch of DIF Labs,
+an initiative aimed at transforming how decentralized identity solutions are built, tested, and scaled. DIF Labs bridges
+the gap between brilliant ideas and market-ready solutions, empowering developers, startups, and industry innovators to
+collaborate, experiment, and grow.</p>
+<h2 id="why-dif-labs">Why DIF Labs?</h2>
+<p><img src="https://raw.githubusercontent.com/decentralized-identity/labs/refs/heads/main/docs/blogposts/announcing_incubation_labs/Labs.png" alt="https://raw.githubusercontent.com/decentralized-identity/labs/refs/heads/main/docs/blogposts/announcing_incubation_labs/Labs.png"></p>
+<p>DIF Labs was born from the need for a dedicated space where creators in decentralized identity can focus on practical
+innovation. Traditional standards organizations can be slow and formal, while incubators may lack the technical
+ecosystem DIF provides. DIF Labs is uniquely positioned to address these gaps, offering participants:</p>
+<ul>
+<li><strong>Speed and Flexibility</strong>: Projects in DIF Labs aim to achieve milestones within months, not years.</li>
+<li><strong>Open and Inclusive Governance</strong>: All outputs are open-source and royalty-free, allowing for broad community
+adoption.</li>
+<li><strong>Knowledge Pool</strong>: Access to a network of expertise across technical, legal, and market domains.</li>
+</ul>
+<p>DIF Labs stands apart by supporting real-world applications rather than just standard development. It’s a space where
+builders can focus on creating solutions without the bureaucratic overhead typical of many organizations. Projects are
+open to any decentralized identity stack, not necessarily based on DIF-based specifications.</p>
+<h2 id="the-beta-β-cohort-iterative-process-development">The Beta (β) Cohort: Iterative Process Development</h2>
+<p>The inaugural DIF Labs Beta Cohort began <strong>November 2024</strong>, and runs through <strong>February 2025</strong>. This first iteration is
+a learning process for everyone involved, with high-touch engagement from the chairs to refine the structure and
+maximize impact. The chairs hand-selected projects with leads they knew were capable and focused on completing amazing
+work.</p>
+<h2 id="project-bitcoin-ordinals-verifiable-credentials-framework"><a href="https://github.com/decentralized-identity/labs/blob/main/proposals/btco-vc/btco_vc_proposal.md">Project: Bitcoin Ordinals Verifiable Credentials Framework</a></h2>
+<p><img
+src="https://github.com/decentralized-identity/labs/blob/main/docs/blogposts/announcing_incubation_labs/btco.png?raw=true"
+alt="Bitcoin Ordinals Verifiable Credentials" style="width: 700px;"></p>
+<ul>
+<li><strong>Lead</strong>: Brian Richter</li>
+<li><strong>Goal</strong>: Establish a standardized framework for implementing verifiable credentials on Bitcoin using Ordinal
+inscriptions.</li>
+<li><strong>Use Cases</strong>: Event tickets, digital collectibles, ownership records, Verifiable AI Inference credentials.</li>
+<li><strong>Proposal</strong>: <a href="https://github.com/decentralized-identity/labs/blob/main/proposals/btco-vc/btco_vc_proposal.md">Read the project proposal
+here.</a></li>
+</ul>
+<h2 id="project-linked-claims"><a href="https://github.com/decentralized-identity/labs/blob/main/proposals/linked_claims/001_proposal.md">Project: Linked Claims</a></h2>
+<p><img
+src="https://github.com/decentralized-identity/labs/blob/main/docs/blogposts/announcing_incubation_labs/linked_claims.png?raw=true"
+alt="Linked Claims" style="width: 700px;"></p>
+<ul>
+<li><strong>Leads</strong>: Golda Velez, Agnes Koinange, Phil Long</li>
+<li><strong>Goal</strong>: Build progressive trust through combining attestations and release the high-level specification for
+LinkedClaims to further the LinkedTrust project.</li>
+<li><strong>Proposal</strong>: <a href="https://github.com/decentralized-identity/labs/blob/main/proposals/linked_claims/001_proposal.md">Read the proposal
+here.</a></li>
+</ul>
+<h2 id="project-veranon"><a href="https://github.com/decentralized-identity/labs/blob/main/proposals/veranon/veranon_proposal.md">Project: VerAnon</a></h2>
+<p><img
+src="https://github.com/decentralized-identity/labs/blob/main/docs/blogposts/announcing_incubation_labs/veranon.png?raw=true"
+alt="VerAnon" style="width: 700px;"></p>
+<ul>
+<li><strong>Lead</strong>: Alex Hache</li>
+<li><strong>Goal</strong>: Introduce a protocol for anonymous personhood verification using Semaphore, a zero-knowledge group
+membership protocol.</li>
+<li><strong>Proposal</strong>: <a href="https://github.com/decentralized-identity/labs/blob/main/proposals/veranon/veranon_proposal.md">Read the proposal
+here.</a></li>
+</ul>
+<h2 id="timeline">Timeline</h2>
+<ul>
+<li><strong>Labs Start Date</strong>: Late November 2024</li>
+<li><strong>Check-ins</strong>: Scheduled throughout the three months.</li>
+<li><strong>Show and Tell</strong>: <strong>February 18, 2025</strong> - Projects will be showcased to the community.</li>
+</ul>
+<h2 id="meet-the-mentors-and-chairs">Meet the Mentors and Chairs</h2>
+<h3 id="expert-mentors">Expert Mentors:</h3>
+<ul>
+<li><strong><a href="https://www.linkedin.com/in/anagoessens/?originalSubdomain=nl">Ana Goessens</a></strong>: CEO at Animo Solutions. Makes
+decentralized identity easy. CEO at Animo.id, all-round company/team building in decentralized ID space.</li>
+<li><strong><a href="https://antfu.me/">Anthony Fu</a></strong>: Open Sourcer. Core contributor to Vite/NextJS etc., how to build open-source
+projects.</li>
+<li><strong><a href="https://www.linkedin.com/in/dbuchner/">Daniel Buchner</a></strong>: TBD/Block, Decentralized Web Nodes.</li>
+<li><strong><a href="https://www.linkedin.com/in/jellefm/?originalSubdomain=nl">Jelle Millenaar</a></strong>: Co-Founder and CEO Impierce
+Technologies, DID evangelist.</li>
+<li><strong><a href="https://www.linkedin.com/in/markus-sabadello-353a0821/?originalSubdomain=at">Markus Sabadello</a></strong>: Danube Tech,
+Decentralized Identity Foundation, Sovrin Foundation. Core contributor to Universal Resolver and Universal Registrar,
+go-to expert for DID Resolution spec.</li>
+<li><strong><a href="https://www.nikgraf.com/">Nik Graf</a></strong>: Local-first software expert and Founder at Serenity.</li>
+<li><strong><a href="https://www.linkedin.com/in/otto-mora/?originalSubdomain=cr">Otto Mora</a></strong>: ZK Identity Maxi @ Privado.ID (formerly
+Polygon ID).</li>
+<li><strong><a href="https://www.linkedin.com/in/rizel-bobb-semple/">Rizel Scarlett</a></strong>: Staff Developer Advocate at Block | Artificial
+Intelligence &amp; Open Source.</li>
+<li><strong><a href="https://www.linkedin.com/in/rodboothby/">Rod Boothby</a></strong>: Digital Identity Leader | VP Product | Ex Wells Fargo,
+AIG, EY, Santander. Grew npm Inc to #1 Javascript Repo with 20M Developer users.</li>
+<li><strong><a href="https://www.linkedin.com/in/mccown/">Steve McCown</a></strong>: Chief Architect, Applied Crypto R&amp;D, CISM, CDPSE, Patented
+Inventor.</li>
+</ul>
+<h3 id="chairs">Chairs:</h3>
+<ul>
+<li><strong><a href="https://www.linkedin.com/in/andorsk">Andor Kesselman</a></strong>: CTO Andor Labs, Co-Chair of the Technical Steering
+Committee at DIF, Technical Workstream Lead at the Global Acceptance Network.</li>
+<li><strong><a href="https://www.linkedin.com/in/banerjeeankur/">Ankur Banerjee</a></strong>: CTO/Co-Founder at Creds.xyz &amp; cheqd, Co-Chair of the
+Technical Steering Committee at DIF.</li>
+<li><strong><a href="https://www.linkedin.com/in/daniel-thompson-yvetot-a98301222/">Daniel Thompson-Yvetot</a></strong>: Co-founder of Tauri Apps,
+CEO of CrabNebula, Author of &ldquo;Manufacturing European Software&rdquo;, DIF Labs Co-chair, European Regulatory Expert.</li>
+</ul>
+<h2 id="whats-next-and-getting-involved">What’s Next And Getting Involved?</h2>
+<p>DIF Labs is more than a program—it’s a movement to propel decentralized identity into its next phase of growth. By
+fostering a space for practical, collaborative innovation, DIF Labs aims to cultivate solutions that tackle pressing
+industry-driven challenges in the decentralized identity space.</p>
+<p>We invite you to follow our journey and participate in this initiative:</p>
+<ul>
+<li>Join the conversation on <a href="https://discord.gg/48DgSG4skR">DIF Labs Discord</a></li>
+<li>Explore projects on <a href="https://github.com/decentralized-identity/labs">GitHub</a></li>
+<li>Attend the meetings: Third Tuesday of every month at 11am ET</li>
+<li><a href="https://calendar.google.com/calendar/u/0?cid=ZGVjZW50cmFsaXplZC5pZGVudGl0eUBnbWFpbC5jb20">Subscribe to DIF’s
+calendar</a></li>
+</ul>
+<p>You’ll be hearing more about our Mentors, Chairs, and Cohorts in the coming months. Stay tuned as we unveil even more
+Mentors as well.</p>
+<p>After the Beta cohort is done, we will be opening up for new projects to run through DIF Labs. Together, we’re building
+the future of decentralized identity.</p>
+
+    </div>
+
+    <div class="tags">
+      
+  <div>
+    <div>Tags:</div>
+    <ul>
+        <li><a href="/tags/launch/">Launch</a></li>
+        <li><a href="/tags/beta-cohort/">Beta-Cohort</a></li>
+    </ul>
+  </div>
+
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const progressTrack = document.getElementById('progress-track');
+      const slider = document.getElementById('slider');
+      const durationElem = document.getElementById('duration');
+      const timeRightElem = document.getElementById('time-right');
+      const contentElem = document.querySelector('.content');
+      
+      
+      let totalWords = 0;
+      if (contentElem) {
+        totalWords = contentElem.innerText.trim().split(/\s+/).length;
+      }
+      const totalReadingTime = (totalWords / 200) * 60;  
+      
+      
+      function formatTime(sec) {
+        sec = Math.max(0, sec);
+        const minutes = Math.floor(sec / 60);
+        const seconds = Math.floor(sec % 60);
+        return minutes + "m " + seconds + "s";
+      }
+      
+      
+      durationElem.innerText = "Duration: " + formatTime(totalReadingTime);
+      
+      function updateProgress() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const scrollFraction = (docHeight > 0) ? scrollTop / docHeight : 0;
+        const trackWidth = progressTrack.offsetWidth;
+        
+        if (scrollTop === 0) {
+          
+          slider.style.display = "none";
+          durationElem.style.display = "block";
+          timeRightElem.style.display = "none";
+        } else {
+          
+          durationElem.style.display = "none";
+          slider.style.display = "block";
+          timeRightElem.style.display = "block";
+          
+          
+          
+          const sliderLeft = scrollFraction * trackWidth - slider.offsetWidth / 2;
+          slider.style.left = sliderLeft + "px";
+          
+          
+          const timePassed = totalReadingTime * scrollFraction;
+          const timeRemaining = totalReadingTime - timePassed;
+          
+          
+          slider.innerText = formatTime(timeRemaining);
+          
+          timeRightElem.innerText = "Passed: " + formatTime(timePassed);
+        }
+      }
+      
+      window.addEventListener('scroll', updateProgress);
+      window.addEventListener('resize', updateProgress);
+      updateProgress();
+    });
+  </script>
+
+  </main>
+  <footer>
+    <footer>
+    &copy; 2025 DIF Labs. All rights reserved.
+</footer>
+
+
+  </footer>
+</body>
+</html>
