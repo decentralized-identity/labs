@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
 <head>
-	<meta name="generator" content="Hugo 0.145.0">
+	<meta name="generator" content="Hugo 0.147.0">
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -55,139 +55,66 @@
   </header>
   <main>
     
-<div class="container">
-    <div class="filter-buttons">
-    </div>
+  <p>Laborum voluptate pariatur ex culpa magna nostrud est incididunt fugiat
+pariatur do dolor ipsum enim. Consequat tempor do dolor eu. Non id id anim anim
+excepteur excepteur pariatur nostrud qui irure ullamco.</p>
 
-    <section class="experiment-list" id="experiment-list">
-        
-    </section>
-</div>
-<script>
-    const experimentList = document.getElementById("experiment-list");
-    const filterContainer = document.querySelector(".filter-buttons");
-
-    let activeFilters = {
-        tag: [],
-        lead: []
-    };
-
+  
+    <h2><a href="/posts/042825_request_for_proposals/">Request For Proposals -- Beta Cohort 2</a></h2>
+    DIF Labs is seeking proposals for Beta Cohort 2 focused on decentralized identity, cryptography, authenticity, and verifiable AI
+  
+    <h2><a href="/posts/iiw_01/">🧠 DIF Labs at IIW: Brainstorming Tracks for the Next Cohort</a></h2>
+    DIF Labs at IIW. Talk to us
+  
+    <h2><a href="/posts/beta_cohort_show_and_tell_results/">DIF Labs Beta Cohort Show &amp; Tell Conclusion</a></h2>
+    3 Projects of the DIF Labs Beta Cohort Results
+  
+    <h2><a href="/posts/beta_cohort_show_and_tell/">DIF Labs: Show and Tell – 02/18/2025</a></h2>
+    3 Projects of the DIF Labs Beta Cohort Showcase Their Work For The Last 3 Months
+  
+    <h2><a href="/about/">About</a></h2>
+    <h1 id="dif-labs-charter">DIF Labs Charter</h1>
+<h2 id="status">Status</h2>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Name</td>
+          <td>DIF Labs</td>
+      </tr>
+      <tr>
+          <td>Initial Chairs</td>
+          <td>Andor Kesselman, Ankur Banerjee, Daniel Thompson-Yvetot</td>
+      </tr>
+      <tr>
+          <td>Status</td>
+          <td>ACCEPTED</td>
+      </tr>
+      <tr>
+          <td>Repo</td>
+          <td><a href="https://github.com/decentralized-identity/labs">https://github.com/decentralized-identity/labs</a></td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="scope">Scope</h2>
+<p>The DIF Labs Working Group serves as an incubation
+environment for decentralized identity-based user applications and spec
+implementations. The WG provides an IP-safe environment for general
+implementation-related discussion, and allows participants to propose and
+participate in WG Work Items, each of which is focused on a user application
+and/or spec implementation.</p>
+  
+    <h2><a href="/posts/launch_post/">DIF Labs: Decentralized Identity Innovation Group</a></h2>
+    DIF Labs accelerates Decentralized Identity market innovation
+  
+    <h2><a href="/directory/">Main Directory</a></h2>
     
-    fetch("/data/projects.json")
-        .then(response => {
-            if (!response.ok) {
-                throw new Error("Failed to fetch projects data");
-            }
-            return response.json();
-        })
-        .then(experiments => {
-            
-            const tags = new Set();
-            const leads = new Set();
-
-            experiments.forEach(experiment => {
-                experiment.tags.forEach(tag => tags.add(tag));
-                experiment.leads.forEach(lead => leads.add(lead));
-            });
-
-            
-            createFilterButton(tags, "Filter by Tag", "tag", experiments);
-            createFilterButton(leads, "Filter by Lead", "lead", experiments);
-
-            
-            renderExperiments(experiments);
-
-            
-            document.addEventListener("click", event => {
-                const dropdowns = document.querySelectorAll(".filter-dropdown");
-                dropdowns.forEach(dropdown => {
-                    if (!dropdown.contains(event.target) && !dropdown.previousSibling.contains(event.target)) {
-                        dropdown.style.display = "none";
-                    }
-                });
-            });
-        })
-        .catch(error => {
-            console.error("Error loading experiments:", error);
-            experimentList.innerHTML = "<p>Failed to load experiments. Please try again later.</p>";
-        });
-
-    
-    function createFilterButton(items, label, type, experiments) {
-        const button = document.createElement("button");
-        button.className = "filter-button";
-        button.textContent = label;
-
-        const dropdown = document.createElement("div");
-        dropdown.className = "filter-dropdown";
-        dropdown.style.display = "none";
-
-        items.forEach(item => {
-            const checkboxId = `${type}-${item}`;
-            const checkbox = `
-                <div class="filter-item">
-                    <input type="checkbox" id="${checkboxId}" data-filter-type="${type}" value="${item}">
-                    <label for="${checkboxId}">${item}</label>
-                </div>`;
-            dropdown.innerHTML += checkbox;
-        });
-
-        button.addEventListener("click", event => {
-            event.stopPropagation();
-            dropdown.style.display = dropdown.style.display === "none" ? "block" : "none";
-        });
-
-        dropdown.addEventListener("change", () => {
-            activeFilters[type] = Array.from(
-                document.querySelectorAll(`input[data-filter-type='${type}']:checked`)
-            ).map(checkbox => checkbox.value);
-
-            
-            button.classList.toggle("active", activeFilters[type].length > 0);
-
-            
-            const filteredExperiments = experiments.filter(experiment => {
-                const matchesTag = activeFilters.tag.length
-                    ? experiment.tags.some(tag => activeFilters.tag.includes(tag))
-                    : true;
-                const matchesLead = activeFilters.lead.length
-                    ? experiment.leads.some(lead => activeFilters.lead.includes(lead))
-                    : true;
-                return matchesTag && matchesLead;
-            });
-
-            renderExperiments(filteredExperiments);
-        });
-
-        filterContainer.appendChild(button);
-        filterContainer.appendChild(dropdown);
-    }
-
-    
-    function renderExperiments(experiments) {
-        experimentList.innerHTML = ""; 
-        if (!experiments.length) {
-            experimentList.innerHTML = "<p>No experiments match the selected filters.</p>";
-            return;
-        }
-        experiments.forEach(experiment => {
-            const card = document.createElement("div");
-            card.className = "experiment-card";
-            card.innerHTML = `
-                <h2>${experiment.title}</h2>
-                <p><strong>Description:</strong> ${experiment.description}</p>
-                <p><strong>Long Description:</strong> ${experiment.long_description}</p>
-                <p><strong>Timeline:</strong> ${experiment.timeline}</p>
-                <p><strong>Leads:</strong> ${experiment.leads.join(", ")}</p>
-                <p><strong>Tags:</strong> ${experiment.tags.join(", ")}</p>
-                <a href="${experiment.proposal}" target="_blank">Original Proposal</a>
-                <a href="${experiment.link}" target="_blank">View Project</a>
-            `;
-            experimentList.appendChild(card);
-        });
-    }
-</script>
-
+  
 
   </main>
   <footer>

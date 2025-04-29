@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/beta-cohort-2/</loc>
+    <lastmod>2025-04-28T21:06:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/042825_request_for_proposals/</loc>
+    <lastmod>2025-04-28T21:06:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/request-for-proposals/</loc>
+    <lastmod>2025-04-28T21:06:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/rfp/</loc>
+    <lastmod>2025-04-28T21:06:00-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-04-28T21:06:00-07:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/brainstorm/</loc>
     <lastmod>2025-04-06T20:55:50-07:00</lastmod>
   </url><url>
@@ -9,9 +24,6 @@
     <lastmod>2025-04-06T20:55:50-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/planning/</loc>
-    <lastmod>2025-04-06T20:55:50-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-04-06T20:55:50-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/iiw_01/</loc>
