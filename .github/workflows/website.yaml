@@ -23,11 +23,12 @@ jobs:
       # 3. Build the Hugo website
       - name: Build Hugo Website
         run: |
-          hugo --source website --destination public  # build into 'public' at repo root
+          cd website
+          hugo -d public  # Builds the site into `website/public`
 
       # 4. Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: public
+          publish_dir: website/public
