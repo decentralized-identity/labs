@@ -22,7 +22,7 @@ jobs:
 
       # 3. Build the Hugo website
       - name: Build Hugo Website
-        run: hugo --minify
+        run: hugo --minify --baseURL "https://labs.identity.foundation"
         working-directory: website
 
       # 4. Deploy to GitHub Pages
