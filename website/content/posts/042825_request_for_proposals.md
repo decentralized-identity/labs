@@ -1,9 +1,9 @@
 +++
 date = '2025-04-28T21:06:00-07:00'
 draft = false
-title = '042825_request_for_proposals'
-summary = 'Request For Proposals -- Beta Cohort 2'
-tags = ["request-for-porposals", "beta-cohort-2"]
+title = 'Request For Proposals -- Beta Cohort 2'
+summary = 'DIF Labs is seeking proposals for Beta Cohort 2 focused on decentralized identity, cryptography, authenticity, and verifiable AI'
+tags = ["request-for-proposals", "rfp", "beta-cohort-2"]
 banner = "/imgs/matrix_01.jpg"
 toc = false
 +++
