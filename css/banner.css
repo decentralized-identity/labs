@@ -1,0 +1,76 @@
+.latest-post-banner {
+    padding: 0.75rem 1rem;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.banner-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border: 2px solid #00ff00;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.banner-content:hover {
+    background-color: rgba(0, 255, 0, 0.1);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.latest-text {
+    color: #00ff00;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding-top: 0.25rem;
+}
+
+.post-title {
+    color: #00ff00;
+    font-weight: 500;
+}
+
+.banner-content:hover .post-title {
+    color: #00ff00;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.new-badge {
+    background-color: #00ff00;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    animation: pulse 2s infinite;
+}
+
+.banner-date {
+    color: #00ff00;
+    font-size: 0.9rem;
+    font-weight: normal;
+} 
