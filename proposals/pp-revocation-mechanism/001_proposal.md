@@ -19,39 +19,40 @@
 - URI:
 
 ## Summary
-
-summary here
+This project delivers a comparative study and reference implementation of **privacy-preserving revocation** for W3C Verifiable Credentials (VC).  
+We will (1) catalogue real-world revocation scenarios, (2) benchmark leading cryptographic mechanisms (status lists, dynamic accumulators, zk-SNARK proofs, short-term credentials, etc.), and (3) provide an open-source prototype that can check computational costs aspect of Issuer and Holder and Verifier.
 
 ## Motivation
+Revocation is essential when credentials are mis-issued, expired, compromised, or voluntarily withdrawn.  
+Existing VC deployments mostly expose *who* asked about revocation and *when*, creating new correlation vectors. While privacy-friendly schemes exist in the literature, there is **no consolidated guidance** on:
+* which scheme fits which threat model,
+* how large proofs grow on constrained devices,
+* how implementation effort compares across stacks, and
+* how to map cryptographic objects into the W3C/DIF data models.
 
-motivation here
+Bridging this gap will accelerate trustworthy, user-respectful deployments in e-ID, university certificates, supply-chain certificates, and beyond.
 
-## Coordination/Correspondence
-
-- Bi-weekly updates on progress and blockers
-- Monthly community calls for feedback and discussion
-- GitHub discussions for technical proposals
-- Regular documentation updates
-
+## Coordination / Correspondence
+- **Bi-weekly** GitHub project board updates on metrics & blockers  
+- **Monthly** Technical discussion will be in [TBD]
+- Email correspondence may be sent to [TBD]
 ## Prior Art
-
-Write related works with explanations and some context.
-
-- Status List
-- Camenisch–Lysyanskaya (CL) accumulator schemes.
-- Idemix / U-Prove
-- Revocation bitmap scheme (Hyperledger Indy AnonCreds)
-- etc....
+| Category | Representative Work | 
+|----------|--------------------|
+| **Status List** | W3C StatusList2021 / 2024 draft | 
+| **Bitmap Scheme** |  | 
+| **Short-Term Credentials** || 
+| **CL Accumulators** | Camenisch–Lysyanskaya 2002 (CL02) | 
+| **zk-SNARK Approaches** | “Revocation via zk-SNARKS” |
 
 ## Unresolved Questions
-
-- Performance vs. privacy: Which accumulator variant balances proof size and verification cost?
-- Standards alignment: How to map the chosen design to existing DIF & W3C data models?
-- Key management: Issuer-side key rotation without breaking accumulator state.
+1. **Performance vs Privacy** Which accumulator variant minimises *both* proof size and verifier CPU?
+2. **Standards Alignment** How should evidence (e.g., non-membership proofs) be encoded in W3CVCDM or SD-JWT-VC?
 
 ## Outputs
-
-1. Comparative Analysis Report (PDF/Markdown): Detailed survey of revocation approaches, with privacy and performance metrics.
-2. Reference Implementation: A modular library (TypeScript/Rust) demonstrating the selected privacy-preserving revocation protocol.
-3. Demo Application: Simple verifier/holder demo showing end-to-end issuance, presentation, and revocation checks.
-4. (Optional) Spec Proposal: A draft specification for a privacy-preserving revocation extension, to be completed if time and community consensus allow.
+| # | Deliverable | Description & Success Criteria |
+|---|-------------|--------------------------------|
+| **1** | *Comparative Analysis Report* (PDF & Markdown) | Survey of schemes, threat models, proof sizes, on-chain/off-chain costs, and  🚀 implementation-time metrics (LoC & developer-hours). |
+| **2** | *Reference Library* (TypeScript + Rust crates) | Covers at least StatusList, CL accumulator, and one zk-SNARK path. |
+| **3** | *Demo App* | Browser + CLI demo ― issuer dashboard, holder wallet, verifier widget ― showcasing revocation without correlation. |
+| **4** | *(Optional) Draft Spec* | DIF or CCG draft NOTE describing normative data model & protocol extensions, if community consensus emerges by July. |
