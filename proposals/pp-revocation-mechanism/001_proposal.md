@@ -52,7 +52,6 @@ Bridging this gap will accelerate trustworthy, user-respectful deployments in e-
 ## Outputs
 | # | Deliverable | Description & Success Criteria |
 |---|-------------|--------------------------------|
-| **1** | *Comparative Analysis Report* (PDF & Markdown) | Survey of schemes, threat models, proof sizes, on-chain/off-chain costs, and  🚀 implementation-time metrics (LoC & developer-hours). |
+| **1** | *Comparative Analysis Report* (PDF & Markdown) | Survey of schemes, threat models, computational costs and data sizes |
 | **2** | *Reference Library* (TypeScript + Rust crates) | Covers at least StatusList, CL accumulator, and one zk-SNARK path. |
 | **3** | *Demo App* | Browser + CLI demo ― issuer dashboard, holder wallet, verifier widget ― showcasing revocation without correlation. |
-| **4** | *(Optional) Draft Spec* | DIF or CCG draft NOTE describing normative data model & protocol extensions, if community consensus emerges by July. |
