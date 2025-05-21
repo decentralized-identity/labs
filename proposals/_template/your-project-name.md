@@ -22,6 +22,16 @@ Src: [I made it up](https://i.kym-cdn.com/photos/images/newsfeed/002/360/522/db7
 
 Why this project, why now, why DIF Labs, what kind of feedback/mentoring sought
 
+## Problem
+
+## Approach
+
+## Team
+
+## Outputs
+
+Can be hard deliverables or softer goals
+
 ## Coordination Format
 
 By default:
@@ -39,6 +49,3 @@ Links and one-sentence summary of relevance for prior art (can be code or specs 
 
 About DIF, the process, or the commitment if accepted.
 
-## Outputs
-
-Can be hard deliverables or softer goals
