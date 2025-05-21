@@ -7,9 +7,9 @@
 </a><a href=https://github.com/decentralized-identity/labs target=_blank rel="noopener noreferrer" title="Visit our GitHub"><img src=/imgs/github-logo.svg fill=#00ff00 alt=GitHub style=height:24px></a></nav><button class=hamburger aria-label="Toggle Navigation">
 <span></span>
 <span></span>
-<span></span></button></header></header><main><div class=latest-post-banner><a href=/posts/2025_beta_cohort_2_extension/ class=banner-content><span class=latest-text>Latest Post</span>
+<span></span></button></header></header><main><div class=latest-post-banner><a href=/posts/20250519_labsextension/ class=banner-content><span class=latest-text>Latest Post</span>
 <span class=new-badge>NEW</span>
-<span class=post-title>Beta Cohort 2 Proposal Extension To May 31</span>
+<span class=post-title>Extension -- Beta Cohort 2 : May 31</span>
 <span class=banner-date>May 19, 2025</span></a></div><div class=container><div class=filter-buttons></div><section class=experiment-list id=experiment-list></section></div><script>const experimentList=document.getElementById("experiment-list"),filterContainer=document.querySelector(".filter-buttons");let activeFilters={tag:[],lead:[]};fetch("/data/projects.json").then(e=>{if(!e.ok)throw new Error("Failed to fetch projects data");return e.json()}).then(e=>{const t=new Set,n=new Set;e.forEach(e=>{e.tags.forEach(e=>t.add(e)),e.leads.forEach(e=>n.add(e))}),createFilterButton(t,"Filter by Tag","tag",e),createFilterButton(n,"Filter by Lead","lead",e),renderExperiments(e),document.addEventListener("click",e=>{const t=document.querySelectorAll(".filter-dropdown");t.forEach(t=>{!t.contains(e.target)&&!t.previousSibling.contains(e.target)&&(t.style.display="none")})})}).catch(e=>{console.error("Error loading experiments:",e),experimentList.innerHTML="<p>Failed to load experiments. Please try again later.</p>"});function createFilterButton(e,t,n,s){const i=document.createElement("button");i.className="filter-button",i.textContent=t;const o=document.createElement("div");o.className="filter-dropdown",o.style.display="none",e.forEach(e=>{const t=`${n}-${e}`,s=`
                 <div class="filter-item">
                     <input type="checkbox" id="${t}" data-filter-type="${n}" value="${e}">
