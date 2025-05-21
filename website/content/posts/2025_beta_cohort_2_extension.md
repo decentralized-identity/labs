@@ -33,8 +33,9 @@ Everything else about the program remains the same—same focus areas, same eval
 ## Updated Submission Details
 
 - **New Deadline:** **May 31, 2025**
-- **Submit To:** [labs@identity.foundation](mailto:labs@identity.foundation)
-- **Format:** 2–3 page PDF or Markdown covering Title & Summary, Problem & Approach, Outcomes, Timeline, and Team.
+- **Submit**: open a PR on the labs repo in DIF's github org
+- **Inquiries**: labs@identity.foundation
+- **Format**: 1 page markdown overview of proposal (see other proposals [here](https://github.com/decentralized-identity/labs/tree/main/proposals/) and template [here](https://github.com/decentralized-identity/labs/tree/main/proposals/_template/your-project-name.md))
 
 Short‑listed teams may be invited to a brief interview or pitch call in early June.
 
