@@ -1,0 +1,20 @@
+name: "Lint"
+on: push
+defaults:
+  run:
+    shell: bash
+
+jobs:
+
+  md-link-check:
+    name: "Broken Markdown links"
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run Markdown link check
+        uses: gaurav-nelson/github-action-markdown-link-check@v1
+        with:
+          config-file: '.github/linters/mlc_config.json'
+          use-quiet-mode: 'yes'
