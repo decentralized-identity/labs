@@ -49,7 +49,7 @@ Several key technologies and specifications inform this proposal:
 
 4. [DID Core Specification](https://www.w3.org/TR/did-core/) - Manu Sporny, Amy Guy, Markus Sabadello, Drummond Reed, et al. The W3C specification that establishes the foundation for decentralized identifiers and their resolution.
 
-5. [DID Linked Resources](https://w3c-ccg.github.io/DID-Linked-Resources/) - Alex Tweeddale. The DIF specification for associating verifiable resources with DIDs in a tamper-evident way.
+5. [DID Linked Resources](https://w3c-ccg.github.io/did-linked-resources/) - Alex Tweeddale. The DIF specification for associating verifiable resources with DIDs in a tamper-evident way.
 
 6. [`did:btco` Method Specification](https://github.com/ordinalsreserve/did-btco) - Brian Richter. A DID method that enables associating DIDs with Bitcoin using Ordinal Theory & Inscriptions.
 

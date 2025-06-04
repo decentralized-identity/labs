@@ -79,7 +79,7 @@ I would be open to providing a brief bi-weekly update on progress and blockers f
 
 ## Prior art
 Well-known proof of personhood protocols include:
-- [Anima](https://www.animaidentity.com)
+- Anima
 - [BrightID](https://www.brightid.org/)
 - [Idena](https://www.idena.io/)
 - [Proof of Humanity](https://proofofhumanity.id/)
