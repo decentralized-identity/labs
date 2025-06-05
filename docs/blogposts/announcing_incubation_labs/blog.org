@@ -39,7 +39,7 @@ The inaugural DIF Labs Beta Cohort began **November 2024**, and runs through **F
 - **Leads**: Golda Velez, Agnes Koinange, Phil Long
 - **Goal**: Build progressive trust through combining attestations and release the high-level specification for LinkedClaims to further the LinkedTrust project.
 - **Proposal**: [[https://example.com][Read the proposal here.]]
-* [[https://github.com/decentralized-identity/labs/blob/main/proposals/veranon/veranon_proposal.md][Project: VerAnon]]
+* [[https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-1-2024/veranon/veranon_proposal.md][Project: VerAnon]]
 [[https://github.com/decentralized-identity/labs/blob/main/docs/blogposts/announcing_incubation_labs/veranon.png?raw=true]]
 - **Lead**: Alex Hache
 - **Goal**: Introduce a protocol for anonymous personhood verification using Semaphore, a zero-knowledge group membership protocol.

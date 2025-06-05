@@ -71,7 +71,7 @@ alt="Linked Claims" style="width: 700px;">
 - **Proposal**: [Read the proposal
   here.](https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-1-2024/linked_claims/001_proposal.md)
 
-## [Project: VerAnon](https://github.com/decentralized-identity/labs/blob/main/proposals/veranon/veranon_proposal.md)
+## [Project: VerAnon](https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-1-2024/veranon/veranon_proposal.md)
 
 <img
 src="https://github.com/decentralized-identity/labs/blob/main/docs/blogposts/announcing_incubation_labs/veranon.png?raw=true"
@@ -81,7 +81,7 @@ alt="VerAnon" style="width: 700px;">
 - **Goal**: Introduce a protocol for anonymous personhood verification using Semaphore, a zero-knowledge group
   membership protocol.
 - **Proposal**: [Read the proposal
-  here.](https://github.com/decentralized-identity/labs/blob/main/proposals/veranon/veranon_proposal.md)
+  here.](https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-1-2024/veranon/veranon_proposal.md)
 
 ## Timeline
 
