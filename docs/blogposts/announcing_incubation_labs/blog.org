@@ -28,18 +28,18 @@ standard development. It’s a space where builders can focus on creating soluti
 * The Beta (β) Cohort: Iterative Process Development
 The inaugural DIF Labs Beta Cohort began **November 2024**, and runs through **February 2025**. This first iteration is a learning process for everyone involved, with high-touch engagement from the chairs to refine the structure and maximize impact. The chairs hand-selected projects with leads they knew were capable and focused on completing some amazing work.
 
-* [[https://github.com/decentralized-identity/labs/blob/main/proposals/btco-vc/btco_vc_proposal.md][Project: Bitcoin Ordinals Verifiable Credentials Framework]]
+* [[https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-1-2024/btco-vc/btco_vc_proposal.md][Project: Bitcoin Ordinals Verifiable Credentials Framework]]
 [[https://github.com/decentralized-identity/labs/blob/main/docs/blogposts/announcing_incubation_labs/btco.png?raw=true]]
 - **Lead**: Brian Richter
 - **Goal**: Establish a standardized framework for implementing verifiable credentials on Bitcoin using Ordinal inscriptions.
 - **Use Cases**: Event tickets, digital collectibles, ownership records, Verifiable AI Inference credentials.
 - **Proposal**: [[https://example.com][Read the project proposal here.]]
-* [[https://github.com/decentralized-identity/labs/blob/main/proposals/linked_claims/001_proposal.md][Project: Linked Claims]]
+* [[https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-1-2024/linked_claims/001_proposal.md][Project: Linked Claims]]
 [[https://github.com/decentralized-identity/labs/blob/main/docs/blogposts/announcing_incubation_labs/linked_claims.png?raw=true]]
 - **Leads**: Golda Velez, Agnes Koinange, Phil Long
 - **Goal**: Build progressive trust through combining attestations and release the high-level specification for LinkedClaims to further the LinkedTrust project.
 - **Proposal**: [[https://example.com][Read the proposal here.]]
-* [[https://github.com/decentralized-identity/labs/blob/main/proposals/veranon/veranon_proposal.md][Project: VerAnon]]
+* [[https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-1-2024/veranon/veranon_proposal.md][Project: VerAnon]]
 [[https://github.com/decentralized-identity/labs/blob/main/docs/blogposts/announcing_incubation_labs/veranon.png?raw=true]]
 - **Lead**: Alex Hache
 - **Goal**: Introduce a protocol for anonymous personhood verification using Semaphore, a zero-knowledge group membership protocol.

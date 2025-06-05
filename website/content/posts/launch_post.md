@@ -46,7 +46,7 @@ a learning process for everyone involved, with high-touch engagement from the ch
 maximize impact. The chairs hand-selected projects with leads they knew were capable and focused on completing amazing
 work.
 
-## [Project: Bitcoin Ordinals Verifiable Credentials Framework](https://github.com/decentralized-identity/labs/blob/main/proposals/btco-vc/btco_vc_proposal.md)
+## [Project: Bitcoin Ordinals Verifiable Credentials Framework](https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-1-2024/btco-vc/btco_vc_proposal.md)
 
 <img
 src="https://github.com/decentralized-identity/labs/blob/main/docs/blogposts/announcing_incubation_labs/btco.png?raw=true"
@@ -57,9 +57,9 @@ alt="Bitcoin Ordinals Verifiable Credentials" style="width: 700px;">
   inscriptions.
 - **Use Cases**: Event tickets, digital collectibles, ownership records, Verifiable AI Inference credentials.
 - **Proposal**: [Read the project proposal
-  here.](https://github.com/decentralized-identity/labs/blob/main/proposals/btco-vc/btco_vc_proposal.md)
+  here.](https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-1-2024/btco-vc/btco_vc_proposal.md)
 
-## [Project: Linked Claims](https://github.com/decentralized-identity/labs/blob/main/proposals/linked_claims/001_proposal.md)
+## [Project: Linked Claims](https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-1-2024/linked_claims/001_proposal.md)
 
 <img
 src="https://github.com/decentralized-identity/labs/blob/main/docs/blogposts/announcing_incubation_labs/linked_claims.png?raw=true"
@@ -69,9 +69,9 @@ alt="Linked Claims" style="width: 700px;">
 - **Goal**: Build progressive trust through combining attestations and release the high-level specification for
   LinkedClaims to further the LinkedTrust project.
 - **Proposal**: [Read the proposal
-  here.](https://github.com/decentralized-identity/labs/blob/main/proposals/linked_claims/001_proposal.md)
+  here.](https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-1-2024/linked_claims/001_proposal.md)
 
-## [Project: VerAnon](https://github.com/decentralized-identity/labs/blob/main/proposals/veranon/veranon_proposal.md)
+## [Project: VerAnon](https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-1-2024/veranon/veranon_proposal.md)
 
 <img
 src="https://github.com/decentralized-identity/labs/blob/main/docs/blogposts/announcing_incubation_labs/veranon.png?raw=true"
@@ -81,7 +81,7 @@ alt="VerAnon" style="width: 700px;">
 - **Goal**: Introduce a protocol for anonymous personhood verification using Semaphore, a zero-knowledge group
   membership protocol.
 - **Proposal**: [Read the proposal
-  here.](https://github.com/decentralized-identity/labs/blob/main/proposals/veranon/veranon_proposal.md)
+  here.](https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-1-2024/veranon/veranon_proposal.md)
 
 ## Timeline
 

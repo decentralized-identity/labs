@@ -1,0 +1,21 @@
+{
+    "aliveStatusCodes": [0, 200, 206, 400, 403, 429, 501, 999],
+    "replacementPatterns": [
+        {
+            "pattern": "\" %}",
+            "replacement": ""
+        },
+        {
+            "pattern": "&quot; %}",
+            "replacement": ""
+        }
+    ],
+	"ignorePatterns": [
+		{
+			"pattern": "^https://twitter.com/"
+		},
+		{
+			"pattern": "^#"
+		}
+	]
+}

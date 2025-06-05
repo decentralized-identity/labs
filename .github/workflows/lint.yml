@@ -1,0 +1,25 @@
+name: "Lint"
+on: push
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+
+  md-link-check:
+    name: "Broken Markdown links"
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run Markdown link check
+        uses: tcort/github-action-markdown-link-check@v1
+        with:
+          config-file: '.github/linters/mlc_config.json'
+          use-quiet-mode: 'yes'

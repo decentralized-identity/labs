@@ -72,4 +72,3 @@ Seeking collaborators that are interested in the project!
 
 - Recommended standards for zero-knowledge proofs of inference in VC `proof` fields
 - Sustainability models for agent credential indexing and discovery post-cohort
-

@@ -8,7 +8,7 @@
         "cohort": "Beta",
         "link": "https://github.com/decentralized-identity/labs-btco-vc",
         "tags": ["Bitcoin", "Verifiable Credentials", "Decentralized Identifiers"],
-        "proposal": "https://github.com/decentralized-identity/labs/blob/main/proposals/btco-vc/btco_vc_proposal.md"
+        "proposal": "https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-1-2024/btco-vc/btco_vc_proposal.md"
     },
     {
         "title": "Linked Claims",
@@ -19,7 +19,7 @@
         "cohort": "Beta",
         "link": "https://github.com/decentralized-identity/labs-linkedclaims",
         "tags":["LinkedClaims", "Decentralized Identifiers", "Verifiable Credentials"],
-        "proposal": "https://github.com/decentralized-identity/labs/blob/main/proposals/linked_claims/001_proposal.md"
+        "proposal": "https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-1-2024/linked_claims/001_proposal.md"
     },
     {
         "title": "VerAnon",
@@ -30,6 +30,6 @@
         "leads": ["Alex Hache"],
         "cohort": "Beta",
         "link": "https://github.com/decentralized-identity/labs-veranon",
-        "proposal": "https://github.com/decentralized-identity/labs/blob/main/proposals/veranon/veranon_proposal.md"
+        "proposal": "https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-1-2024/veranon/veranon_proposal.md"
     }
 ]
