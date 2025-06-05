@@ -59,7 +59,7 @@ alt="Bitcoin Ordinals Verifiable Credentials" style="width: 700px;">
 - **Proposal**: [Read the project proposal
   here.](https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-1-2024/btco-vc/btco_vc_proposal.md)
 
-## [Project: Linked Claims](https://github.com/decentralized-identity/labs/blob/main/proposals/linked_claims/001_proposal.md)
+## [Project: Linked Claims](https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-1-2024/linked_claims/001_proposal.md)
 
 <img
 src="https://github.com/decentralized-identity/labs/blob/main/docs/blogposts/announcing_incubation_labs/linked_claims.png?raw=true"
@@ -69,7 +69,7 @@ alt="Linked Claims" style="width: 700px;">
 - **Goal**: Build progressive trust through combining attestations and release the high-level specification for
   LinkedClaims to further the LinkedTrust project.
 - **Proposal**: [Read the proposal
-  here.](https://github.com/decentralized-identity/labs/blob/main/proposals/linked_claims/001_proposal.md)
+  here.](https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-1-2024/linked_claims/001_proposal.md)
 
 ## [Project: VerAnon](https://github.com/decentralized-identity/labs/blob/main/proposals/veranon/veranon_proposal.md)
 

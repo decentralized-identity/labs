@@ -19,7 +19,7 @@
         "cohort": "Beta",
         "link": "https://github.com/decentralized-identity/labs-linkedclaims",
         "tags":["LinkedClaims", "Decentralized Identifiers", "Verifiable Credentials"],
-        "proposal": "https://github.com/decentralized-identity/labs/blob/main/proposals/linked_claims/001_proposal.md"
+        "proposal": "https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-1-2024/linked_claims/001_proposal.md"
     },
     {
         "title": "VerAnon",
