@@ -46,7 +46,7 @@ a learning process for everyone involved, with high-touch engagement from the ch
 maximize impact. The chairs hand-selected projects with leads they knew were capable and focused on completing amazing
 work.
 
-## [Project: Bitcoin Ordinals Verifiable Credentials Framework](https://github.com/decentralized-identity/labs/blob/main/proposals/btco-vc/btco_vc_proposal.md)
+## [Project: Bitcoin Ordinals Verifiable Credentials Framework](https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-1-2024/btco-vc/btco_vc_proposal.md)
 
 <img
 src="https://github.com/decentralized-identity/labs/blob/main/docs/blogposts/announcing_incubation_labs/btco.png?raw=true"
@@ -57,7 +57,7 @@ alt="Bitcoin Ordinals Verifiable Credentials" style="width: 700px;">
   inscriptions.
 - **Use Cases**: Event tickets, digital collectibles, ownership records, Verifiable AI Inference credentials.
 - **Proposal**: [Read the project proposal
-  here.](https://github.com/decentralized-identity/labs/blob/main/proposals/btco-vc/btco_vc_proposal.md)
+  here.](https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-1-2024/btco-vc/btco_vc_proposal.md)
 
 ## [Project: Linked Claims](https://github.com/decentralized-identity/labs/blob/main/proposals/linked_claims/001_proposal.md)
 

@@ -8,7 +8,7 @@
         "cohort": "Beta",
         "link": "https://github.com/decentralized-identity/labs-btco-vc",
         "tags": ["Bitcoin", "Verifiable Credentials", "Decentralized Identifiers"],
-        "proposal": "https://github.com/decentralized-identity/labs/blob/main/proposals/btco-vc/btco_vc_proposal.md"
+        "proposal": "https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-1-2024/btco-vc/btco_vc_proposal.md"
     },
     {
         "title": "Linked Claims",
