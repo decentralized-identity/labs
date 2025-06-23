@@ -1,11 +1,11 @@
 +++
 title = "Introducing Beta Cohort 2: Advancing Privacy, Legal Frameworks, and Governance in Verifiable Credentials"
-date = '2025-06-22T10:00:00-07:00'
+date = '2025-06-22T20:00:00-07:00'
 draft = false
 author = "DIF Labs Team"
 tags = ["beta-cohort-2", "launch", "verifiable-credentials", "privacy", "legal-framework", "governance"]
 banner = "/imgs/matrix_01.jpg"
-summary = 'Beta Cohort 2 launches June 24th with three groundbreaking projects focusing on legal frameworks, privacy-preserving revocation, and anonymous multi-signature credentials'
+summary = 'Beta Cohort 2 Launches'
 toc = false
 +++
 
@@ -17,10 +17,10 @@ Beta Cohort 2 represents a significant evolution in our approach to decentralize
 
 ### Enhanced Mentorship Program
 
-We're excited to welcome **Brian Richter** and **Agnes Koinange** as mentors for Beta Cohort 2. Both bring invaluable experience from leading projects in our first cohort:
+We're excited to welcome **Brian Richter** and **Agnes Koinange** as mentors for Beta Cohort 2. Both bring invaluable experience from leading projects in our first cohort and were previously leads in the last cohort:
 
-- **Brian Richter**, Founder of Aviary Tech and creator of Ordinals Plus, brings deep expertise in Bitcoin-native identity solutions and verifiable credentials
-- **Agnes Koinange**, Technical Director at TrustNet, contributes extensive knowledge in identity infrastructure and credentialing systems
+- **Brian Richter**: Founder of Aviary Tech and creator of Ordinals Plus, brings deep expertise in Bitcoin-native identity solutions and verifiable credentials
+- **Agnes Koinange**: Previously lead of the LinkedTrust project. Software engineer with immense experience in decentralized identity.
 
 They join our existing expert mentor team, ensuring project leads receive world-class guidance throughout their development journey.
 
@@ -28,13 +28,13 @@ They join our existing expert mentor team, ensuring project leads receive world-
 
 ### 1. Legally-Binding Proof of Personhood for Verifiable Credentials via QES
 
-**Led by Jon Bauer and Roberto Carvajal from Good Future, LLC**
+**Led by Jon Bauer and Roberto Carvajal**
 
 This project addresses a critical gap in current verifiable credentials: the lack of legal recognition and high-assurance identity binding. The team is developing a standardized method to anchor any W3C Verifiable Credential to **Qualified Electronic Signatures (QES)**, which carry the same legal weight as handwritten signatures under European eIDAS regulation.
 
 **Key Innovation**: Any existing VC can be "upgraded" with legally binding attestation, providing embedded KYC assurance and regulatory compliance for high-value transactions.
 
-**Timeline**: June 24 - August 31, 2025
+**Timeline**: June 24, 2025 - September 24, 2025
 
 [Learn more about the QES project →](https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-2-2025/legallybinding-vcs/legallybinding-vcs.md)
 
@@ -46,7 +46,7 @@ Revocation is essential for credential ecosystems, but current solutions often e
 
 **Key Innovation**: A comparative analysis and reference implementation covering status lists, dynamic accumulators, zk-SNARK proofs, and short-term credentials, with practical guidance for implementers.
 
-**Timeline**: June 24 - August 31, 2025
+**Timeline**: June 24, 2025 - September 24, 2025
 
 [Explore the privacy revocation research →](https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-2-2025/pp-revocation-mechanism/001_proposal.md)
 
@@ -58,7 +58,7 @@ Many organizations require collective decision-making for credential issuance, b
 
 **Key Innovation**: Enables DAOs, government agencies, and multi-stakeholder organizations to issue credentials with cryptographic proof of sufficient approval, while keeping individual signer identities anonymous.
 
-**Timeline**: June 24 - August 31, 2025
+**Timeline**: June 24, 2025 - September 24, 2025
 
 [Discover anonymous multi-sig credentials →](https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-2-2025/anon-multi-sig-vc/anon_multi_sig_vc_proposal.md)
 
@@ -74,19 +74,7 @@ Together, these innovations create a more robust, privacy-preserving, and legall
 
 ## Kick-Off: June 24, 2025
 
-Beta Cohort 2 officially begins on **June 24, 2025**, with all three project teams starting their intensive development phase. Over the next ten weeks, we'll be sharing regular updates on progress, breakthrough moments, and technical insights from each project.
-
-## What to Expect
-
-Each project team will deliver:
-
-- **Open-source implementations** and libraries
-- **Technical specifications** and documentation  
-- **Research papers** and comparative analyses
-- **Reference demos** showcasing real-world applications
-- **Community workshops** and technical discussions
-
-All deliverables will be published openly, ensuring the broader decentralized identity community benefits from these innovations.
+Beta Cohort 2 officially begins on **June 24, 2025**, with all three project teams starting their intensive development phase. Over the next three months, we'll be sharing regular updates on progress, breakthrough moments, and technical insights from each project.
 
 ## Join the Journey
 
@@ -95,7 +83,8 @@ Follow along with Beta Cohort 2's progress:
 - **GitHub**: All projects are developed in the open at [github.com/decentralized-identity/labs](https://github.com/decentralized-identity/labs)
 - **Community Calls**: Monthly technical discussions and progress updates
 - **Directory**: Meet the [project leads and mentors](https://labs.identity.foundation/directory/) supporting each initiative
-- **Updates**: Regular blog posts highlighting milestones and breakthroughs
+- **Discord**: Check the [discord link](https://discord.com/invite/xnDAFnBS)
+
 
 The future of verifiable credentials is being built today. We invite you to explore these projects, engage with the teams, and help shape the next generation of decentralized identity infrastructure.
 
