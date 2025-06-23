@@ -43,7 +43,7 @@
         "leads": ["Jon Bauer", "Roberto Carvajal"],
         "cohort": "beta-cohort-2",
         "cohort_name": "Beta Cohort 2",
-        "link": "https://github.com/decentralized-identity/labs-legallybinding-vcs",
+        "link": "https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-2-2025/legallybinding-vcs/legallybinding-vcs.md",
         "tags": ["Verifiable Credentials", "QES", "Legal Framework", "eIDAS", "KYC"],
         "proposal": "https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-2-2025/legallybinding-vcs/legallybinding-vcs.md"
     },
@@ -55,7 +55,7 @@
         "leads": ["Kai Otsuki", "Ken Watanabe"],
         "cohort": "beta-cohort-2",
         "cohort_name": "Beta Cohort 2",
-        "link": "https://github.com/decentralized-identity/labs-pp-revocation",
+        "link": "https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-2-2025/pp-revocation-mechanism/001_proposal.md",
         "tags": ["Verifiable Credentials", "Revocation", "Privacy", "Cryptography", "zk-SNARK"],
         "proposal": "https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-2-2025/pp-revocation-mechanism/001_proposal.md"
     },
@@ -67,7 +67,7 @@
         "leads": ["Seohee Park", "Lukas Han"],
         "cohort": "beta-cohort-2",
         "cohort_name": "Beta Cohort 2",
-        "link": "https://github.com/decentralized-identity/labs-anon-multi-sig-vc",
+        "link": "https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-2-2025/anon-multi-sig-vc/anon_multi_sig_vc_proposal.md",
         "tags": ["Verifiable Credentials", "Multi-Signature", "Semaphore", "Privacy", "Cryptography"],
         "proposal": "https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-2-2025/anon-multi-sig-vc/anon_multi_sig_vc_proposal.md"
     }

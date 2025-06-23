@@ -225,7 +225,44 @@
                     "profile_url": "https://www.linkedin.com/in/daniel-thompson-yvetot-a98301222/"
                 }
             ],
-            "leads": []
+            "leads": [
+                {
+                    "name": "Jon Bauer",
+                    "role": "Legally-Binding VCs via QES",
+                    "img": "/data/profiles/placeholder.jpg",
+                    "profile_url": "https://github.com/coveloper"
+                },
+                {
+                    "name": "Roberto Carvajal",
+                    "role": "Legally-Binding VCs via QES",
+                    "img": "/data/profiles/placeholder.jpg",
+                    "profile_url": "https://github.com/robertocarvajal"
+                },
+                {
+                    "name": "Kai Otsuki",
+                    "role": "Privacy-Preserving Revocation",
+                    "img": "/data/profiles/placeholder.jpg",
+                    "profile_url": "https://www.linkedin.com/in/kai-otsuki-9475a8303/"
+                },
+                {
+                    "name": "Ken Watanabe",
+                    "role": "Privacy-Preserving Revocation",
+                    "img": "/data/profiles/placeholder.jpg",
+                    "profile_url": "https://github.com/dorakemon"
+                },
+                {
+                    "name": "Seohee Park",
+                    "role": "Anonymous Multi-Sig VCs",
+                    "img": "/data/profiles/placeholder.jpg",
+                    "profile_url": "https://github.com/dvlprsh"
+                },
+                {
+                    "name": "Lukas Han",
+                    "role": "Anonymous Multi-Sig VCs",
+                    "img": "/data/profiles/placeholder.jpg",
+                    "profile_url": "https://github.com/lukasjhan"
+                }
+            ]
         }
     }
 }

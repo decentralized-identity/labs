@@ -148,9 +148,16 @@ function filterAvatars() {
 
 // Fetch and initialize the directory
 (async function initializeDirectory() {
+    console.log('Initializing directory...');
     peopleData = await fetchPeople();
     if (peopleData) {
+        console.log('People data loaded:', peopleData);
         createCohortTabs(peopleData);
+        console.log('Current cohort:', currentCohort);
+        console.log('Cohort data:', peopleData.cohorts[currentCohort]);
         displayCohortContent(peopleData.cohorts[currentCohort]);
     }
+
+    // Close modal when clicking overlay
+    document.getElementById('modalOverlay').addEventListener('click', closeModal);
 })();
