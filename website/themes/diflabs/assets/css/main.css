@@ -87,6 +87,25 @@ nav a:hover {
 }
 
 .experiment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.cohort-section {
+    margin-bottom: 40px;
+}
+
+.cohort-header {
+    color: #66FF66;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #66FF66;
+    padding-bottom: 10px;
+}
+
+.cohort-experiments {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
@@ -109,7 +128,7 @@ nav a:hover {
     box-shadow: 0 0 15px #00FF00;
 }
 
-.experiment-card h2 {
+.experiment-card h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
     color: #66FF66;
@@ -124,20 +143,34 @@ nav a:hover {
     color: #00FF00;
 }
 
+.experiment-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
 .experiment-card a {
     display: inline-block;
-    align-self: flex-start;
     padding: 10px 20px;
-    margin-top: 10px;
     text-decoration: none;
     background-color: #FFCC00;
     color: #000;
     font-weight: bold;
     border-radius: 4px;
+    flex: 1;
+    text-align: center;
 }
 
 .experiment-card a:hover {
     background-color: #FFB000;
+}
+
+.proposal-link {
+    background-color: #66FF66 !important;
+}
+
+.proposal-link:hover {
+    background-color: #4FDD4F !important;
 }
 
 footer {

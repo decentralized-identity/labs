@@ -14,7 +14,8 @@
 
     let activeFilters = {
         tag: [],
-        lead: []
+        lead: [],
+        cohort: []
     };
 
     // Fetch the projects.json file and populate the experiment list
@@ -26,21 +27,24 @@
             return response.json();
         })
         .then(experiments => {
-            // Collect unique tags and leads
+            // Collect unique tags, leads, and cohorts
             const tags = new Set();
             const leads = new Set();
+            const cohorts = new Set();
 
             experiments.forEach(experiment => {
                 experiment.tags.forEach(tag => tags.add(tag));
                 experiment.leads.forEach(lead => leads.add(lead));
+                cohorts.add(experiment.cohort_name);
             });
 
             // Create filter buttons
             createFilterButton(tags, "Filter by Tag", "tag", experiments);
             createFilterButton(leads, "Filter by Lead", "lead", experiments);
+            createFilterButton(cohorts, "Filter by Cohort", "cohort", experiments);
 
-            // Render all experiments initially
-            renderExperiments(experiments);
+            // Render all experiments initially, grouped by cohort
+            renderExperimentsByCohort(experiments);
 
             // Close dropdown when clicking outside
             document.addEventListener("click", event => {
@@ -98,37 +102,78 @@
                 const matchesLead = activeFilters.lead.length
                     ? experiment.leads.some(lead => activeFilters.lead.includes(lead))
                     : true;
-                return matchesTag && matchesLead;
+                const matchesCohort = activeFilters.cohort.length
+                    ? activeFilters.cohort.includes(experiment.cohort_name)
+                    : true;
+                return matchesTag && matchesLead && matchesCohort;
             });
 
-            renderExperiments(filteredExperiments);
+            renderExperimentsByCohort(filteredExperiments);
         });
 
         filterContainer.appendChild(button);
         filterContainer.appendChild(dropdown);
     }
 
-    // Render experiments
-    function renderExperiments(experiments) {
+    // Group experiments by cohort and render
+    function renderExperimentsByCohort(experiments) {
         experimentList.innerHTML = ""; // Clear existing experiments
+        
         if (!experiments.length) {
             experimentList.innerHTML = "<p>No experiments match the selected filters.</p>";
             return;
         }
+
+        // Group experiments by cohort
+        const cohortGroups = {};
         experiments.forEach(experiment => {
-            const card = document.createElement("div");
-            card.className = "experiment-card";
-            card.innerHTML = `
-                <h2>${experiment.title}</h2>
-                <p><strong>Description:</strong> ${experiment.description}</p>
-                <p><strong>Long Description:</strong> ${experiment.long_description}</p>
-                <p><strong>Timeline:</strong> ${experiment.timeline}</p>
-                <p><strong>Leads:</strong> ${experiment.leads.join(", ")}</p>
-                <p><strong>Tags:</strong> ${experiment.tags.join(", ")}</p>
-                <a href="${experiment.proposal}" target="_blank">Original Proposal</a>
-                <a href="${experiment.link}" target="_blank">View Project</a>
-            `;
-            experimentList.appendChild(card);
+            const cohortName = experiment.cohort_name;
+            if (!cohortGroups[cohortName]) {
+                cohortGroups[cohortName] = [];
+            }
+            cohortGroups[cohortName].push(experiment);
+        });
+
+        // Sort cohorts so Beta Cohort 2 comes first
+        const sortedCohorts = Object.keys(cohortGroups).sort((a, b) => {
+            if (a === 'Beta Cohort 2') return -1;
+            if (b === 'Beta Cohort 2') return 1;
+            return a.localeCompare(b);
+        });
+
+        // Render each cohort group
+        sortedCohorts.forEach(cohortName => {
+            const cohortSection = document.createElement("div");
+            cohortSection.className = "cohort-section";
+
+            const cohortHeader = document.createElement("h2");
+            cohortHeader.className = "cohort-header";
+            cohortHeader.textContent = cohortName;
+            cohortSection.appendChild(cohortHeader);
+
+            const cohortGrid = document.createElement("div");
+            cohortGrid.className = "cohort-experiments";
+
+            cohortGroups[cohortName].forEach(experiment => {
+                const card = document.createElement("div");
+                card.className = "experiment-card";
+                card.innerHTML = `
+                    <h3>${experiment.title}</h3>
+                    <p><strong>Description:</strong> ${experiment.description}</p>
+                    <p><strong>Long Description:</strong> ${experiment.long_description}</p>
+                    <p><strong>Timeline:</strong> ${experiment.timeline}</p>
+                    <p><strong>Leads:</strong> ${experiment.leads.join(", ")}</p>
+                    <p><strong>Tags:</strong> ${experiment.tags.join(", ")}</p>
+                    <div class="experiment-links">
+                        <a href="${experiment.proposal}" target="_blank" class="proposal-link">Original Proposal</a>
+                        <a href="${experiment.link}" target="_blank" class="project-link">View Project</a>
+                    </div>
+                `;
+                cohortGrid.appendChild(card);
+            });
+
+            cohortSection.appendChild(cohortGrid);
+            experimentList.appendChild(cohortSection);
         });
     }
 </script>

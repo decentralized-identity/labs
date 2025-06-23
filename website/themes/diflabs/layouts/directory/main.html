@@ -7,26 +7,21 @@
         <input type="text" id="searchInput" placeholder="Search people..." onkeyup="filterAvatars()">
     </div>
 
-    <h2 id="mentors">Expert Mentors</h2>
-    <div class="avatar-grid" id="mentors-grid">
-        <!-- Mentors will be populated here -->
+    <!-- Cohort Navigation Tabs -->
+    <div class="cohort-tabs" id="cohortTabs">
+        <!-- Tabs will be populated here -->
     </div>
 
-    <h2 id="chairs">Chairs</h2>
-    <div class="avatar-grid" id="chairs-grid">
-        <!-- Chairs will be populated here -->
-    </div>
-
-    <h2 id="leads">Project Leads</h2>
-    <div class="avatar-grid" id="leads-grid">
-        <!-- Project Leads will be populated here -->
+    <!-- Content for each cohort -->
+    <div class="cohort-content" id="cohortContent">
+        <!-- Cohort content will be populated here -->
     </div>
 </div>
 
 <div class="overlay" id="modalOverlay"></div>
 <div class="modal" id="infoModal">
     <div class="profile-img">
-    <img id="modalImg" src="${person.img}" alt="Profile image" 
+    <img id="modalImg" src="" alt="Profile image" 
          onerror="this.style.display='none'"/>
     </div>
     <h2 id="modalName"></h2>
