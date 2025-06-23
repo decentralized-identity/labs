@@ -162,17 +162,33 @@ function filterAvatars() {
 
 // Fetch and initialize the directory
 (async function initializeDirectory() {
-    console.log('Initializing directory...');
     try {
-        peopleData = await fetchPeople();
-        console.log('People data loaded:', peopleData);
+        const rawData = await fetchPeople();
         
-        if (peopleData && peopleData.cohorts) {
+        // Handle both old and new data formats
+        if (rawData) {
+            // Check if it's the new cohort-based format
+            if (rawData.cohorts) {
+                peopleData = rawData;
+            } else {
+                // Convert old format to new format
+                console.log('Converting old data format to new cohort format');
+                peopleData = {
+                    cohorts: {
+                        'beta-cohort-1': {
+                            name: 'Beta Cohort 1',
+                            mentors: rawData.mentors || [],
+                            chairs: rawData.chairs || [],
+                            leads: rawData.leads || []
+                        }
+                    }
+                };
+                currentCohort = 'beta-cohort-1';
+            }
+            
             createCohortTabs(peopleData);
-            console.log('Current cohort:', currentCohort);
             
             if (peopleData.cohorts[currentCohort]) {
-                console.log('Cohort data:', peopleData.cohorts[currentCohort]);
                 displayCohortContent(peopleData.cohorts[currentCohort]);
             } else {
                 console.error('Current cohort not found in data:', currentCohort);
@@ -184,7 +200,7 @@ function filterAvatars() {
                 }
             }
         } else {
-            console.error('Invalid people data structure:', peopleData);
+            console.error('No data received from server');
         }
         
         // Close modal when clicking overlay
