@@ -2,10 +2,11 @@
     {
         "title": "Ordinals Plus",
         "description": "Establish a standardized framework for implementing verifiable credentials on Bitcoin using Ordinal inscriptions.",
-        "long_description": "This proposal outlines a framework built on the did:btco method, associating DIDs with specific ordinals for tamper-proof digital artifacts. By leveraging Bitcoin’s security and decentralization, it aims to enable on-chain verifiable credentials for use cases such as event tickets, ownership records, and AI-generated content. Emphasis is on privacy, scalability, and seamless integration with existing W3C VC and DID standards.",
+        "long_description": "This proposal outlines a framework built on the did:btco method, associating DIDs with specific ordinals for tamper-proof digital artifacts. By leveraging Bitcoin's security and decentralization, it aims to enable on-chain verifiable credentials for use cases such as event tickets, ownership records, and AI-generated content. Emphasis is on privacy, scalability, and seamless integration with existing W3C VC and DID standards.",
         "timeline": "November 28, 2024 - January 31, 2025",
         "leads": ["Brian Richter"],
-        "cohort": "Beta",
+        "cohort": "beta-cohort-1",
+        "cohort_name": "Beta Cohort 1",
         "link": "https://github.com/decentralized-identity/labs-btco-vc",
         "tags": ["Bitcoin", "Verifiable Credentials", "Decentralized Identifiers"],
         "proposal": "https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-1-2024/btco-vc/btco_vc_proposal.md"
@@ -16,7 +17,8 @@
         "long_description": "LinkedClaims defines a minimal but powerful specification for addressable claims that can be cryptographically linked across different platforms and implementations. This ensures that verifiers can evaluate chains of trust based on their own roots of trust. The work includes finalizing the high-level spec for LinkedClaims, organizing stakeholder workshops, and producing libraries for implementers. The intended result is a lightweight open standard facilitating decentralized and progressively built trust.",
         "timeline": "November 19, 2024 - February 6, 2025",
         "leads": ["Golda Velez", "Agnes Koinange", "Phil Long"],
-        "cohort": "Beta",
+        "cohort": "beta-cohort-1",
+        "cohort_name": "Beta Cohort 1",
         "link": "https://github.com/decentralized-identity/labs-linkedclaims",
         "tags":["LinkedClaims", "Decentralized Identifiers", "Verifiable Credentials"],
         "proposal": "https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-1-2024/linked_claims/001_proposal.md"
@@ -28,8 +30,45 @@
         "long_description": "VerAnon uses Semaphore to enable unique and anonymous verification of personhood. Managers verify user identity documents, adding their Semaphore identity commitments to a group. Subjects then generate zero-knowledge proofs to show membership without revealing their actual identities. This approach helps prevent large-scale bot account creation and enhances privacy across various service providers, all while preserving unique personhood claims.",
         "timeline": "November 20, 2024 - January 31, 2025",
         "leads": ["Alex Hache"],
-        "cohort": "Beta",
+        "cohort": "beta-cohort-1",
+        "cohort_name": "Beta Cohort 1",
         "link": "https://github.com/decentralized-identity/labs-veranon",
         "proposal": "https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-1-2024/veranon/veranon_proposal.md"
+    },
+    {
+        "title": "Legally-Binding Proof of Personhood for Verifiable Credentials via QES",
+        "description": "A verifiable credential schema tailored for decentralized applications that require proof of personhood, enabling a secure, tamper-proof and standardized format to bind any W3C Verifiable Credential to a Qualified Electronic Signature (QES).",
+        "long_description": "This proposal creates a standardized method to anchor Verifiable Credentials to legally recognized, high-assurance proof of an individual's identity through Qualified Electronic Signatures (QES). QES, recognized by eIDAS in the European Union, represent the highest level of electronic signature, carrying the same legal weight as a handwritten signature. By creating a standardized mechanism to attach a QES to any VC, we can bind that credential to the strong proof of personhood and KYC attributes inherent in the QES.",
+        "timeline": "May 31, 2025 - August 31, 2025",
+        "leads": ["Jon Bauer", "Roberto Carvajal"],
+        "cohort": "beta-cohort-2",
+        "cohort_name": "Beta Cohort 2",
+        "link": "https://github.com/decentralized-identity/labs-legallybinding-vcs",
+        "tags": ["Verifiable Credentials", "QES", "Legal Framework", "eIDAS", "KYC"],
+        "proposal": "https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-2-2025/legallybinding-vcs/legallybinding-vcs.md"
+    },
+    {
+        "title": "Privacy-Preserving Revocation Mechanism",
+        "description": "A comparative study and reference implementation of privacy-preserving revocation for W3C Verifiable Credentials.",
+        "long_description": "This project delivers a comprehensive analysis of privacy-preserving revocation mechanisms for Verifiable Credentials. It catalogues real-world revocation scenarios, benchmarks leading cryptographic mechanisms (status lists, dynamic accumulators, zk-SNARK proofs, short-term credentials), and provides an open-source prototype that evaluates computational costs for Issuers, Holders, and Verifiers. The work bridges the gap between cryptographic research and practical VC deployments.",
+        "timeline": "May 20, 2025 - August 31, 2025",
+        "leads": ["Kai Otsuki", "Ken Watanabe"],
+        "cohort": "beta-cohort-2",
+        "cohort_name": "Beta Cohort 2",
+        "link": "https://github.com/decentralized-identity/labs-pp-revocation",
+        "tags": ["Verifiable Credentials", "Revocation", "Privacy", "Cryptography", "zk-SNARK"],
+        "proposal": "https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-2-2025/pp-revocation-mechanism/001_proposal.md"
+    },
+    {
+        "title": "Anonymous Multi-Signature Verifiable Credentials",
+        "description": "A protocol for Verifiable Credential issuance that requires approval from multiple members within an issuing organization while keeping the identities of individual signers anonymous.",
+        "long_description": "This proposal outlines a protocol for VC issuance that requires m-of-n multi-signature approval while maintaining anonymity of individual signers. Using Semaphore, it enables decentralized governance for VC issuance in organizations such as DAOs or government agencies, cryptographically proving sufficient participation without revealing the identities of participating members. The protocol maintains compatibility with existing VC formats like W3C VCDM and IETF SD-JWT VC.",
+        "timeline": "May 20, 2025 - August 31, 2025",
+        "leads": ["Seohee Park", "Lukas Han"],
+        "cohort": "beta-cohort-2",
+        "cohort_name": "Beta Cohort 2",
+        "link": "https://github.com/decentralized-identity/labs-anon-multi-sig-vc",
+        "tags": ["Verifiable Credentials", "Multi-Signature", "Semaphore", "Privacy", "Cryptography"],
+        "proposal": "https://github.com/decentralized-identity/labs/blob/main/proposals/beta-cohort-2-2025/anon-multi-sig-vc/anon_multi_sig_vc_proposal.md"
     }
 ]
