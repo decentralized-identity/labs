@@ -19,6 +19,13 @@ function createCohortTabs(data) {
     const tabsContainer = document.getElementById("cohortTabs");
     tabsContainer.innerHTML = "";
 
+    // Check if data and cohorts exist
+    if (!data || !data.cohorts) {
+        console.error('Invalid data structure:', data);
+        tabsContainer.innerHTML = '<p>Error loading cohort data</p>';
+        return;
+    }
+
     const cohorts = Object.keys(data.cohorts);
     // Sort cohorts so beta-cohort-2 comes first
     cohorts.sort((a, b) => {
@@ -53,6 +60,13 @@ function switchCohort(cohortId) {
 function displayCohortContent(cohortData) {
     const contentContainer = document.getElementById("cohortContent");
     contentContainer.innerHTML = "";
+
+    // Check if cohortData exists
+    if (!cohortData) {
+        console.error('No cohort data provided');
+        contentContainer.innerHTML = '<p>No cohort data available</p>';
+        return;
+    }
 
     // Create sections for each role type
     const roleTypes = ['mentors', 'chairs', 'leads'];
@@ -149,15 +163,36 @@ function filterAvatars() {
 // Fetch and initialize the directory
 (async function initializeDirectory() {
     console.log('Initializing directory...');
-    peopleData = await fetchPeople();
-    if (peopleData) {
+    try {
+        peopleData = await fetchPeople();
         console.log('People data loaded:', peopleData);
-        createCohortTabs(peopleData);
-        console.log('Current cohort:', currentCohort);
-        console.log('Cohort data:', peopleData.cohorts[currentCohort]);
-        displayCohortContent(peopleData.cohorts[currentCohort]);
+        
+        if (peopleData && peopleData.cohorts) {
+            createCohortTabs(peopleData);
+            console.log('Current cohort:', currentCohort);
+            
+            if (peopleData.cohorts[currentCohort]) {
+                console.log('Cohort data:', peopleData.cohorts[currentCohort]);
+                displayCohortContent(peopleData.cohorts[currentCohort]);
+            } else {
+                console.error('Current cohort not found in data:', currentCohort);
+                // Fallback to first available cohort
+                const firstCohort = Object.keys(peopleData.cohorts)[0];
+                if (firstCohort) {
+                    currentCohort = firstCohort;
+                    displayCohortContent(peopleData.cohorts[firstCohort]);
+                }
+            }
+        } else {
+            console.error('Invalid people data structure:', peopleData);
+        }
+        
+        // Close modal when clicking overlay
+        const modalOverlay = document.getElementById('modalOverlay');
+        if (modalOverlay) {
+            modalOverlay.addEventListener('click', closeModal);
+        }
+    } catch (error) {
+        console.error('Error initializing directory:', error);
     }
-
-    // Close modal when clicking overlay
-    document.getElementById('modalOverlay').addEventListener('click', closeModal);
 })();
