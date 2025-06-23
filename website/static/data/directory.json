@@ -68,6 +68,11 @@
                     "role": "Chief Architect, Applied Crypto R&D, CISM, CDPSE, Patented Inventor.",
                     "img": "/data/profiles/steve_mccown.jpg",
                     "profile_url": "https://www.linkedin.com/in/mccown/"
+                },
+                {
+                    "name": "Makki Elfatih",
+                    "role": "Founder and CEO Hkdolts",
+                    "profile_url": "https://www.linkedin.com/in/makki-elfatih-b835752a9/"
                 }
             ],
             "chairs": [
@@ -181,12 +186,6 @@
                     "profile_url": "https://www.linkedin.com/in/rizel-bobb-semple/"
                 },
                 {
-                    "name": "Rod Boothby",
-                    "role": "Digital Identity Leader | VP Product | 2X Co-Founder CEO, COO $150M Incremental Revenue | Ex Wells Fargo, AIG, EY, Santander Grew npm Inc to #1 Javascript Repo with 20M Developer users.",
-                    "img": "/data/profiles/rod_boothby.jpg",
-                    "profile_url": "https://www.linkedin.com/in/rodboothby/"
-                },
-                {
                     "name": "Steve McCown",
                     "role": "Chief Architect, Applied Crypto R&D, CISM, CDPSE, Patented Inventor.",
                     "img": "/data/profiles/steve_mccown.jpg",
@@ -229,38 +228,38 @@
                 {
                     "name": "Jon Bauer",
                     "role": "Legally-Binding VCs via QES",
-                    "img": "/data/profiles/placeholder.jpg",
-                    "profile_url": "https://github.com/coveloper"
+                    "img": "/data/profiles/jon_bauer.jpeg",
+                    "profile_url": "https://www.linkedin.com/in/jonbauer"
                 },
                 {
                     "name": "Roberto Carvajal",
                     "role": "Legally-Binding VCs via QES",
-                    "img": "/data/profiles/placeholder.jpg",
-                    "profile_url": "https://github.com/robertocarvajal"
+                    "img": "/data/profiles/roberto_carvajal.jpeg",
+                    "profile_url": "https://www.linkedin.com/in/robertocarvajal"
                 },
                 {
                     "name": "Kai Otsuki",
                     "role": "Privacy-Preserving Revocation",
-                    "img": "/data/profiles/placeholder.jpg",
+                    "img": "/data/profiles/kai_otsuki.jpeg",
                     "profile_url": "https://www.linkedin.com/in/kai-otsuki-9475a8303/"
                 },
                 {
                     "name": "Ken Watanabe",
                     "role": "Privacy-Preserving Revocation",
-                    "img": "/data/profiles/placeholder.jpg",
+                    "img": "/data/profiles/ken_watanabe.jpg",
                     "profile_url": "https://github.com/dorakemon"
                 },
                 {
                     "name": "Seohee Park",
                     "role": "Anonymous Multi-Sig VCs",
-                    "img": "/data/profiles/placeholder.jpg",
-                    "profile_url": "https://github.com/dvlprsh"
+                    "img": "/data/profiles/seohee_park.jpeg",
+                    "profile_url": "https://www.linkedin.com/in/seohee-dev"
                 },
                 {
                     "name": "Lukas Han",
                     "role": "Anonymous Multi-Sig VCs",
-                    "img": "/data/profiles/placeholder.jpg",
-                    "profile_url": "https://github.com/lukasjhan"
+                    "img": "/data/profiles/lukas_han.jpeg",
+                    "profile_url": "https://www.linkedin.com/in/lukas-j-han"
                 }
             ]
         }
