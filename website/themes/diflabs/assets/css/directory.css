@@ -20,6 +20,54 @@
     font-size: 1em;
 }
 
+.cohort-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+
+.cohort-tab {
+    padding: 12px 24px;
+    background-color: #121212;
+    color: #00FF00;
+    border: 1px solid #00FF00;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.cohort-tab:hover {
+    background-color: #00FF00;
+    color: #121212;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.3);
+}
+
+.cohort-tab.active {
+    background-color: #66FF66;
+    color: #121212;
+    border-color: #66FF66;
+    box-shadow: 0 0 15px rgba(102, 255, 102, 0.5);
+}
+
+.cohort-content {
+    margin-top: 20px;
+}
+
+.role-section {
+    margin-bottom: 40px;
+}
+
+.role-section h2 {
+    color: #66FF66;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.8em;
+}
+
 .avatar-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));

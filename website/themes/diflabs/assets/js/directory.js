@@ -1,3 +1,6 @@
+let currentCohort = 'beta-cohort-2'; // Default to latest cohort
+let peopleData = null;
+
 async function fetchPeople() {
     try {
         const response = await fetch("/data/directory.json");
@@ -12,14 +15,78 @@ async function fetchPeople() {
     }
 }
 
-function populateGrid(category, gridId, people) {
-    const grid = document.getElementById(gridId);
-    if (!people || !people[category]) return;
+function createCohortTabs(data) {
+    const tabsContainer = document.getElementById("cohortTabs");
+    tabsContainer.innerHTML = "";
 
-    // Clear the grid before repopulating
-    grid.innerHTML = "";
+    const cohorts = Object.keys(data.cohorts);
+    // Sort cohorts so beta-cohort-2 comes first
+    cohorts.sort((a, b) => {
+        if (a === 'beta-cohort-2') return -1;
+        if (b === 'beta-cohort-2') return 1;
+        return a.localeCompare(b);
+    });
 
-    people[category].forEach(person => {
+    cohorts.forEach(cohortId => {
+        const cohort = data.cohorts[cohortId];
+        const tab = document.createElement("button");
+        tab.className = `cohort-tab ${cohortId === currentCohort ? 'active' : ''}`;
+        tab.textContent = cohort.name;
+        tab.onclick = () => switchCohort(cohortId);
+        tabsContainer.appendChild(tab);
+    });
+}
+
+function switchCohort(cohortId) {
+    currentCohort = cohortId;
+    
+    // Update active tab
+    document.querySelectorAll('.cohort-tab').forEach(tab => {
+        tab.classList.remove('active');
+    });
+    event.target.classList.add('active');
+    
+    // Update content
+    displayCohortContent(peopleData.cohorts[cohortId]);
+}
+
+function displayCohortContent(cohortData) {
+    const contentContainer = document.getElementById("cohortContent");
+    contentContainer.innerHTML = "";
+
+    // Create sections for each role type
+    const roleTypes = ['mentors', 'chairs', 'leads'];
+    const roleLabels = {
+        'mentors': 'Expert Mentors',
+        'chairs': 'Chairs', 
+        'leads': 'Project Leads'
+    };
+
+    roleTypes.forEach(roleType => {
+        if (cohortData[roleType] && cohortData[roleType].length > 0) {
+            const section = document.createElement("div");
+            section.className = "role-section";
+            
+            const heading = document.createElement("h2");
+            heading.id = roleType;
+            heading.textContent = roleLabels[roleType];
+            section.appendChild(heading);
+            
+            const grid = document.createElement("div");
+            grid.className = "avatar-grid";
+            grid.id = `${roleType}-grid`;
+            
+            populateGrid(cohortData[roleType], grid);
+            section.appendChild(grid);
+            contentContainer.appendChild(section);
+        }
+    });
+}
+
+function populateGrid(people, gridElement) {
+    gridElement.innerHTML = "";
+
+    people.forEach(person => {
         const card = document.createElement("div");
         card.className = "avatar-card";
         card.innerHTML = `
@@ -30,7 +97,7 @@ function populateGrid(category, gridId, people) {
             <p>${person.role}</p>
         `;
         card.addEventListener("click", () => openModal(person));
-        grid.appendChild(card);
+        gridElement.appendChild(card);
     });
 }
 
@@ -79,12 +146,11 @@ function filterAvatars() {
     });
 }
 
-// Fetch and populate the grids
+// Fetch and initialize the directory
 (async function initializeDirectory() {
-    const people = await fetchPeople();
-    if (people) {
-        populateGrid("mentors", "mentors-grid", people);
-        populateGrid("chairs", "chairs-grid", people);
-        populateGrid("leads", "leads-grid", people);
+    peopleData = await fetchPeople();
+    if (peopleData) {
+        createCohortTabs(peopleData);
+        displayCohortContent(peopleData.cohorts[currentCohort]);
     }
 })();
