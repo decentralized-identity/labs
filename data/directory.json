@@ -68,11 +68,6 @@
                     "role": "Chief Architect, Applied Crypto R&D, CISM, CDPSE, Patented Inventor.",
                     "img": "/data/profiles/steve_mccown.jpg",
                     "profile_url": "https://www.linkedin.com/in/mccown/"
-                },
-                {
-                    "name": "Makki Elfatih",
-                    "role": "Founder and CEO Hkdolts",
-                    "profile_url": "https://www.linkedin.com/in/makki-elfatih-b835752a9/"
                 }
             ],
             "chairs": [
@@ -178,12 +173,6 @@
                     "role": "ZK Identity Maxi @ Privado.ID (formerly Polygon ID).",
                     "img": "/data/profiles/otto_mora.jpg",
                     "profile_url": "https://www.linkedin.com/in/otto-mora/"
-                },
-                {
-                    "name": "Rizel Scarlett",
-                    "role": "Staff Developer Advocate at Block | Artificial Intelligence & Open Source.",
-                    "img": "/data/profiles/rizel_scarlett.jpg",
-                    "profile_url": "https://www.linkedin.com/in/rizel-bobb-semple/"
                 },
                 {
                     "name": "Steve McCown",
