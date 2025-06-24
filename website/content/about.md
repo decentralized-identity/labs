@@ -58,7 +58,7 @@ of the possible deliverables:
 ## Additional Resources: 
 
 - [Meeting Recordings](https://docs.google.com/spreadsheets/d/1wgccmMvIImx30qVE9GhRKWWv3vmL2ZyUauuKx3IfRmA/edit?gid=983396687#gid=983396687)
-- [Discord](https://discord.gg/972yqVmD)
+- [Discord](https://discord.gg/RK9jPgDMp9)
 - [Github](https://github.com/decentralized-identity/labs)
 - [Beta cohort Kickoff](https://docs.google.com/presentation/d/1P5MfXZWwF6Sowz9sR_We5qdSqqt6XYPV3Mdc0lGqY28/edit#slide=id.p)
 - [IIW Slides](https://docs.google.com/presentation/d/1crZQGctcoTDtZlNqLH22IZir8G1gWQnPrHXodPnIqvE/edit?usp=sharing)
