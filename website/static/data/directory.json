@@ -49,7 +49,7 @@
                     "name": "Otto Mora",
                     "role": "ZK Identity Maxi @ Privado.ID (formerly Polygon ID).",
                     "img": "/data/profiles/otto_mora.jpg",
-                    "profile_url": "https://www.linkedin.com/in/otto-mora/"
+                    "profile_url": "https://www.linkedin.com/in/ottomorac/"
                 },
                 {
                     "name": "Rizel Scarlett",
@@ -173,6 +173,12 @@
                     "role": "ZK Identity Maxi @ Privado.ID (formerly Polygon ID).",
                     "img": "/data/profiles/otto_mora.jpg",
                     "profile_url": "https://www.linkedin.com/in/otto-mora/"
+                },
+                {
+                    "name": "Steffen Schwalm",
+                    "role": "Principal Consultant | Senior Manager Digital Identity and Trust",
+                    "img": "/data/profiles/steffen_schwalm.jpg",
+                    "profile_url": "https://www.linkedin.com/in/steffen-schwalm-a383b8112/"
                 },
                 {
                     "name": "Steve McCown",
