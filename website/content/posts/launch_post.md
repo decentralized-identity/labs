@@ -104,7 +104,7 @@ alt="VerAnon" style="width: 700px;">
   Decentralized Identity Foundation, Sovrin Foundation. Core contributor to Universal Resolver and Universal Registrar,
   go-to expert for DID Resolution spec.
 - **[Nik Graf](https://www.nikgraf.com/)**: Local-first software expert and Founder at Serenity.
-- **[Otto Mora](https://www.linkedin.com/in/otto-mora/?originalSubdomain=cr)**: ZK Identity Maxi @ Privado.ID (formerly
+- **[Otto Mora](https://www.linkedin.com/in/ottomorac/?originalSubdomain=cr)**: ZK Identity Maxi @ Privado.ID (formerly
   Polygon ID).
 - **[Rizel Scarlett](https://www.linkedin.com/in/rizel-bobb-semple/)**: Staff Developer Advocate at Block | Artificial
   Intelligence & Open Source.
